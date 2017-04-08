@@ -6,7 +6,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Media Browse</title>
+<title>Media browse</title>
 <link rel="stylesheet" type="text/css" href="css/default.css" />
 <script type="text/javascript" src="js/jquery-latest.pack.js"></script>
 <script type="text/javascript">
@@ -25,10 +25,7 @@ function saveDownload(id)
 
 <body>
 <p>Welcome <?php echo $_SESSION['username'];?></p>
-
-<a href='update_profile.php'  style="color:#FF9900;">Update Profile</a> <br>
 <a href='media_upload.php'  style="color:#FF9900;">Upload File</a>
-
 <div id='upload_result'>
 <?php 
 	if(isset($_REQUEST['result']) && $_REQUEST['result']!=0)
@@ -47,7 +44,7 @@ function saveDownload(id)
 	}
 ?>
     
-    <div style="background:#339900;color:#FFFFFF; width:200px;">Uploaded Media List</div>
+    <div style="background:#339900;color:#FFFFFF; width:150px;">Uploaded Media</div>
 	<table width="50%" cellpadding="0" cellspacing="0">
 		<?php
 			while ($result_row = mysql_fetch_row($result)) //filename, username, type, mediaid, path
