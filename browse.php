@@ -28,7 +28,7 @@ function saveDownload(id)
 
 <a href='update_profile.php'  style="color:#FF9900;">Update Profile</a> <br>
 <a href='media_upload.php'  style="color:#FF9900;">Upload File</a> <br>
-<a href='.php'  style="color:#FF9900;">Send Message</a> <br>
+<a href='message.php'  style="color:#FF9900;">Message&Inbox</a> <br>
 
 
 <div id='upload_result'>

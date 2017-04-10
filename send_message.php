@@ -1,26 +1,26 @@
 <?php
-	include "header.php";
-	include_once "function.php";
+    session_start();
+    include_once "function.php";
 
-	$query = "SELECT id FROM `user` WHERE `username` = '$username'";
-	$result = mysql_query($query);
+	$sduser = $_SESSION['username'];
+	$subj = $_POST['subj'];
+	$msg = $_POST['msg'];
+	$rcvuser = $_POST['rcvusername'];
 
-	if(!$result) {
+    $check = user_exist($rcvuser);
+
+	if($check == 2) {
         echo "Error sending message! Username does not exist!";
         exit(-1);
     }
 
-	$row = mysqli_fetch_row($result);
+    $insert = "insert into message(message, subj, sdusername, rcvusername, msgid)".
+    "values('$msg','$subj','$sduser','$rcvuser', NULL)";
 
-	$uid = $row[0];
-	$mid = rand();
-	$sid = $_SESSION['id'];
-	$query = "INSERT INTO message(massage, subj, sdusername, rcvusername, msgid, ts)  
-    VALUES ('$message', '$subj', '$sdusername', '$rcvusername', NULL, now());";
-	$result = mysql_query($query);
+	$insertresult = mysql_query($insert);
 
-	if(!$result) {
-        echo "Error sending message!";
+	if(!$insertresult) {
+        echo "insert error";
         exit(-1);
     }
 

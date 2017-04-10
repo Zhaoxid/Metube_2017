@@ -24,8 +24,20 @@ function user_exist_check ($username, $password){
 		}
 	}
 }
-
-
+function user_exist ($username)
+{
+    $query = "select * from account where username='$username'";
+    $result = mysql_query($query);
+    if (!$result) {
+        die ("user_exist_check() failed. Could not query the database: <br />" . mysql_error());
+    } else {
+        $row = mysql_fetch_row($result);
+        if (strcmp($row[0], $username))
+            return 2; //no user match
+        else
+            return 0; //Checked.
+    }
+}
 function user_pass_check($username, $password)
 {
 	
