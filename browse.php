@@ -27,7 +27,9 @@ function saveDownload(id)
 <p>Welcome <?php echo $_SESSION['username'];?></p>
 
 <a href='update_profile.php'  style="color:#FF9900;">Update Profile</a> <br>
-<a href='media_upload.php'  style="color:#FF9900;">Upload File</a>
+<a href='media_upload.php'  style="color:#FF9900;">Upload File</a> <br>
+<a href='.php'  style="color:#FF9900;">Send Message</a> <br>
+
 
 <div id='upload_result'>
 <?php 

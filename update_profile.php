@@ -18,7 +18,7 @@ if(isset($_POST['submit'])) {
 	$query = "update account set password='$newpassword' where username='$username'";
 	echo "<script type='text/javascript'>alert('Changed successfully!')</script>";
 	$result = mysql_query($query);
-	if(!$result) die("error changing pass.".mysql_error());
+	if(!$result) die("error changing password.".mysql_error());
 }
 ?>
 
