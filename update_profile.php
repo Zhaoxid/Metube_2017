@@ -8,10 +8,12 @@ if(isset($_POST['submit'])) {
 	$check = user_pass_check($_SESSION['username'],$_POST['oldpwd']);
 
 	if ($check == 2) {
-				$update_error = "Incorrect old password.";
+        $update_error = "Incorrect old password.";
+        exit(-1);
 	}
 	if( $_POST['newpwd1'] != $_POST['newpwd2']) {
 		$update_error = "New passwords don't match. Try again.";
+		exit(-1);
 	}
 	$newpassword = $_POST['newpwd1'];
 	$username = $_SESSION['username'];
@@ -35,8 +37,10 @@ if(isset($_POST['submit'])) {
    	 }
  	?>
 <p>Welcome <?php echo $_SESSION['username'];?>!</p>
+
 <a href='browse.php'  style="color:#FF9900;">Return</a> <br><br>
 
+<h4> Change Password</h4>
 <form action="update_profile.php" method="post" >
         Old Password: <input type="password" name = "oldpwd" required></input><br/>
         New Password:<input type="password" name = "newpwd1" required></input><br/>

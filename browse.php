@@ -29,7 +29,7 @@ function saveDownload(id)
 <a href='update_profile.php'  style="color:#FF9900;">Update Profile</a> <br>
 <a href='media_upload.php'  style="color:#FF9900;">Upload File</a> <br>
 <a href='message.php'  style="color:#FF9900;">Message&Inbox</a> <br>
-
+<a href='index.php'  style="color:#FF9900;">Logout</a> <br>
 
 <div id='upload_result'>
 <?php 
@@ -59,18 +59,18 @@ function saveDownload(id)
 				$filenpath = $result_row[4];
 		?>
         	 <tr valign="top">			
-			<td>
+			    <td>
 					<?php 
 						echo $mediaid;  //mediaid
 					?>
-			</td>
-                        <td>
-            	            <a href="media.php?id=<?php echo $mediaid;?>" target="_blank"><?php echo $filename;?></a> 
-                        </td>
-                        <td>
-            	            <a href="<?php echo $filenpath;?>" target="_blank" onclick="javascript:saveDownload(<?php echo $result_row[4];?>);">Download</a>
-                        </td>
-		</tr>
+		    	</td>
+                 <td>
+                     <a href="media.php?id=<?php echo $mediaid;?>" target="_blank"><?php echo $filename;?></a>
+                 </td>
+                 <td>
+                     <a href="<?php echo $filenpath;?>" target="_blank" onclick="javascript:saveDownload(<?php echo $result_row[4];?>);">Download</a>
+                 </td>
+		    </tr>
         	<?php
 			}
 		?>
