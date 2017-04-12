@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6f287eb-8c99-4c89-a9be-bfd558e4e984" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/browse.php" afterPath="$PROJECT_DIR$/browse.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/create_message.php" afterPath="$PROJECT_DIR$/create_message.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/create_table.sql" afterPath="$PROJECT_DIR$/create_table.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/send_message.php" afterPath="$PROJECT_DIR$/send_message.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -97,14 +93,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="browse.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="browse.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/browse.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+            <state relative-caret-position="135">
+              <caret line="9" column="55" lean-forward="false" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
               <folding>
                 <marker date="1492021187000" expanded="true" signature="1222:1241" ph="SELECT * fro... media" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create_table.sql" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/create_table.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -330,12 +336,12 @@
       <workItem from="1491757446464" duration="3413000" />
       <workItem from="1491789294618" duration="17289000" />
       <workItem from="1492014582919" duration="355000" />
-      <workItem from="1492019427059" duration="5388000" />
+      <workItem from="1492019427059" duration="5992000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27094000" />
+    <option name="totallyTimeSpent" value="27698000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="155" y="83" width="1625" height="982" extended-state="0" />
@@ -714,21 +720,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/browse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="55" lean-forward="false" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
+          <folding>
+            <marker date="1492021187000" expanded="true" signature="1222:1241" ph="SELECT * fro... media" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/create_table.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/browse.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-          <folding>
-            <marker date="1492021187000" expanded="true" signature="1222:1241" ph="SELECT * fro... media" />
-          </folding>
         </state>
       </provider>
     </entry>
