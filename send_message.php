@@ -2,10 +2,15 @@
     session_start();
     include_once "function.php";
 
+    if(isset($_GET['id'])) {
+        $rcvuser = $_GET['id'];
+    } else {
+        $rcvuser = $_POST['rcvusername'];
+    }
 	$sduser = $_SESSION['username'];
 	$subj = $_POST['subj'];
 	$msg = $_POST['msg'];
-	$rcvuser = $_POST['rcvusername'];
+
 
     $check = user_exist($rcvuser);
 
