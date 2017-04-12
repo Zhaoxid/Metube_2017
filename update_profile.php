@@ -9,18 +9,21 @@ if(isset($_POST['submit'])) {
 
 	if ($check == 2) {
         $update_error = "Incorrect old password.";
+        echo $update_error;
         exit(-1);
 	}
 	if( $_POST['newpwd1'] != $_POST['newpwd2']) {
 		$update_error = "New passwords don't match. Try again.";
+		echo $update_error;
 		exit(-1);
 	}
 	$newpassword = $_POST['newpwd1'];
 	$username = $_SESSION['username'];
 	$query = "update account set password='$newpassword' where username='$username'";
+    $result = mysql_query($query);
+    if(!$result) die("error changing password.".mysql_error());
+
 	echo "<script type='text/javascript'>alert('Changed successfully!')</script>";
-	$result = mysql_query($query);
-	if(!$result) die("error changing password.".mysql_error());
 }
 ?>
 
