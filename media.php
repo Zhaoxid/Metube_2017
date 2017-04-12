@@ -23,17 +23,21 @@ if(isset($_GET['id'])) {
 	$filename=$result_row[0];   ////0, 4, 2
 	$filepath=$result_row[4]; 
 	$type=$result_row[2];
+	$description=$result_row[5];
+	$title=$result_row[6];
 	if(substr($type,0,5)=="image") //view image
 	{
-		echo "Viewing Picture:";
-		echo $result_row[4];
-		echo "<img src='".$filepath."'/>";
+		?> <h2><?php echo "Viewing Picture:";
+		echo $title; ?></h2>
+		<p><?php echo "<img src='".$filepath."'/>"; ?></p>
+		<h3>Description:</h3>
+		<p><?php echo $description;?></p><?php
 	}
 	else //view movie
 	{	
 ?>
 	<!-- <p>Viewing Video:<?php echo $result_row[2].$result_row[1];?></p> -->
-	<p>Viewing Video:<?php echo $result_row[4];?></p>
+	<h2>Viewing Video:<?php echo $result_row[6];?></h2>
 	      
     <object id="MediaPlayer" width=320 height=286 classid="CLSID:22D6f312-B0F6-11D0-94AB-0080C74C7E95" standby="Loading Windows Media Player components…" type="application/x-oleobject" codebase="http://activex.microsoft.com/activex/controls/mplayer/en/nsmp2inf.cab#Version=6,4,7,1112">
 
@@ -48,10 +52,8 @@ if(isset($_GET['id'])) {
 
 </object>
 
-          
-          
-          
-       
+<h3>Description:<h3>
+<p><?php echo $result_row[5];?></p>      
               
 <?php
 	}

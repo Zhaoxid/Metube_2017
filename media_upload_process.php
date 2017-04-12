@@ -38,12 +38,23 @@ if(!file_exists($dirfile))
 				else /*Successfully upload file*/
 				{
 					//insert into media table
-					$insert = "insert into media(mediaid, filename,username,type, path)".
-							  "values(NULL,'". urlencode($_FILES["file"]["name"])."','$username','".$_FILES["file"]["type"]."', '$upfile')";
+					$insert = "insert into media(mediaid, filename,username,type,path,description,title)".
+							  "values(NULL,'". urlencode($_FILES["file"]["name"])."','$username','".$_FILES["file"]["type"]."', '$upfile','".$_POST['description']."','".$_POST['title']."')";
 					$queryresult = mysql_query($insert)
 						  or die("Insert into Media error in media_upload_process.php " .mysql_error());
-					$result="0";
 					chmod($upfile, 0644);
+					
+					//insert tags into tag table
+					/*$tags=explode(",",$_POST['tags']);
+					$num=count($tags);
+					$get_row=mysql_insert_id($querryresult);
+					$media_row=mysql_fetch_row($get_row);
+					for($i=0;$i<$num;$i++) {
+						$insert2="insert into tags(mediaid,tag)"."values('$media_row[3]','$tags[$i]')";
+						$query2=mysql_query($insert2)
+							or die("Insert into Tags error in media_upload_process.php " .mysql_error());
+					} */
+					$result="0";
 				}
 			}
 			else  
