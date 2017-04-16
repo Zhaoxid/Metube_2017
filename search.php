@@ -13,7 +13,7 @@
 </head>
 
 <body>
-<p>Welcome <?php echo $_SESSION['username'];?></p>
+<p>Welcome <?php echo $_SESSION['username'];?> &nbsp;&nbsp;&nbsp;<a href="javascript:history.back();">[Go Back]</a> </p>
 
 <?php
 if(isset($_GET['search'])){
@@ -56,5 +56,6 @@ if(isset($_GET['search'])){
 <?php
 }	
 ?>
+
 </body>
 </html>
