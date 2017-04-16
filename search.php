@@ -38,7 +38,7 @@ if(isset($_GET['search'])){
 				$mediaid = $result_row[3];
 				$filename = $result_row[0];
 				$filenpath = $result_row[4];
-				$title=$result_row[5];
+				$title=$result_row[6];
 		?>
         	 <tr valign="top">			
                  <td>
