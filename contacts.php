@@ -7,7 +7,7 @@ if(isset($_POST['submit'])) {
     $check = user_exist($_POST['user2']);
 
     if ($check == 2) {
-        echo "<script type='text/javascript'>alert('Contact Added!')</script>";
+        echo "<script type='text/javascript'>alert('Contact does not exist!')</script>";
         exit(-1);
     }
 
