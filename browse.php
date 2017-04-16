@@ -57,8 +57,12 @@ function saveDownload(id)
 	}
 ?>
     
-    <div style="background:#339900;color:#FFFFFF; width:200px;">Uploaded Media List</div>
+    <div style="background:#339900;color:#FFFFFF; width:2000px;">Uploaded Media List</div>
 	<table width="50%" cellpadding="0" cellspacing="0">
+	<tr>
+		<th>Username</th>
+		<th>File Title</th>
+		<th></th>
 		<?php
 			while ($result_row = mysql_fetch_row($result)) //filename, username, type, mediaid, path
 			{ 
