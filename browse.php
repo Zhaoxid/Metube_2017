@@ -7,7 +7,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Media Browse</title>
-<link rel="stylesheet" type="text/css" href="css/default.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<!-- <link rel="stylesheet" type="text/css" href="css/default.css" /> -->
 <script type="text/javascript" src="js/jquery-latest.pack.js"></script>
 <script type="text/javascript">
 function saveDownload(id)
@@ -24,6 +30,8 @@ function saveDownload(id)
 </head>
 
 <body>
+
+<!--
 <p>Welcome <?php echo $_SESSION['username'];?></p>
 
 <a href='update_profile.php'  style="color:#FF9900;">Update Profile</a> <br>
@@ -36,7 +44,24 @@ function saveDownload(id)
 	<input type = 'text' size='90' name='search' >
 	<input type = 'submit' name='submit' value='Search files'>
 </form>
+-->
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" style="z-index:3;width:250px;margin-top:43px;" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href='update_profile.php'>Update Profile</a> <br>
+  <a class="w3-bar-item w3-button w3-hover-black" href='media_upload.php'>Upload File</a> <br>
+  <a class="w3-bar-item w3-button w3-hover-black" href='message.php'>Message&Inbox</a> <br>
+  <a class="w3-bar-item w3-button w3-hover-black" href='contacts.php'>Contacts</a><br>
+  <a class="w3-bar-item w3-button w3-hover-black" href='index.php'>Logout</a> <br>
+
+</nav>
 	
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 
 <div id='upload_result'>
@@ -57,11 +82,18 @@ function saveDownload(id)
 	}
 ?>
     
-    <div style="background:#339900;color:#FFFFFF; width:2000px;">Uploaded Media List</div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Uploaded Media List</h1>
+
 	<table width="50%" cellpadding="0" cellspacing="0">
 	<tr>
-		<th>Username</th>
-		<th>File Title</th>
+		<th align="left">Username</th>
+		<th align="left">File Title</th>
 		<th></th>
 		<?php
 			while ($result_row = mysql_fetch_row($result)) //filename, username, type, mediaid, path
@@ -82,7 +114,7 @@ function saveDownload(id)
                      <a href="media.php?id=<?php echo $mediaid;?>" target="_blank"><?php echo $title;?></a>
                  </td>
                  <td>
-                     <a href="<?php echo $filenpath;?>" target="_blank" onclick="javascript:saveDownload(<?php echo $result_row[4];?>);">Download</a>
+                     <a href="<?php  echo $filenpath;?>" target="_blank" onclick="javascript:saveDownload(<?php echo $result_row[4];?>);">Download</a>
                  </td>
 		    </tr>
         	<?php
