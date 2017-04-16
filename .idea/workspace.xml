@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b6f287eb-8c99-4c89-a9be-bfd558e4e984" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contacts.php" afterPath="$PROJECT_DIR$/contacts.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search.php" afterPath="$PROJECT_DIR$/search.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,14 +17,14 @@
       <file leaf-file-name="contacts.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/contacts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="79" lean-forward="false" selection-start-line="9" selection-start-column="79" selection-end-line="9" selection-end-column="79" />
+            <state relative-caret-position="300">
+              <caret line="20" column="75" lean-forward="true" selection-start-line="20" selection-start-column="75" selection-end-line="20" selection-end-column="75" />
               <folding>
-                <marker date="1492362701000" expanded="true" signature="401:428" ph="insert into contacts... " />
-                <marker date="1492362701000" expanded="true" signature="401:442" ph="insert into contacts... " />
-                <marker date="1492362701000" expanded="true" signature="401:469" ph="insert into contacts... " />
-                <marker date="1492362701000" expanded="true" signature="401:505" ph="insert into contacts... " />
-                <marker date="1492362701000" expanded="true" signature="1466:1514" ph="SELECT * fro... contacts" />
+                <marker date="1492362808000" expanded="true" signature="410:437" ph="insert into contacts... " />
+                <marker date="1492362808000" expanded="true" signature="410:451" ph="insert into contacts... " />
+                <marker date="1492362808000" expanded="true" signature="410:478" ph="insert into contacts... " />
+                <marker date="1492362808000" expanded="true" signature="410:514" ph="insert into contacts... " />
+                <marker date="1492362808000" expanded="true" signature="1475:1523" ph="SELECT * fro... contacts" />
               </folding>
             </state>
           </provider>
@@ -92,7 +91,7 @@
                 <element signature="e#448#454#0#HTML" expanded="true" />
                 <element signature="e#454#460#0#HTML" expanded="true" />
                 <element signature="e#460#466#0#HTML" expanded="true" />
-                <marker date="1492362208000" expanded="true" signature="568:655" ph="SELECT * FRO... media" />
+                <marker date="1492362741000" expanded="true" signature="568:655" ph="SELECT * FRO... media" />
               </folding>
             </state>
           </provider>
@@ -350,12 +349,12 @@
       <workItem from="1492019427059" duration="6980000" />
       <workItem from="1492352977425" duration="4772000" />
       <workItem from="1492361508484" duration="328000" />
-      <workItem from="1492361986478" duration="522000" />
+      <workItem from="1492361986478" duration="607000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34308000" />
+    <option name="totallyTimeSpent" value="34393000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="68" width="1625" height="982" extended-state="0" />
@@ -439,11 +438,11 @@
         <state relative-caret-position="540">
           <caret line="36" column="43" lean-forward="false" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
           <folding>
-            <marker date="1492362701000" expanded="true" signature="401:428" ph="insert into contacts... " />
-            <marker date="1492362701000" expanded="true" signature="401:442" ph="insert into contacts... " />
-            <marker date="1492362701000" expanded="true" signature="401:469" ph="insert into contacts... " />
-            <marker date="1492362701000" expanded="true" signature="401:505" ph="insert into contacts... " />
-            <marker date="1492362701000" expanded="true" signature="1466:1514" ph="SELECT * fro... contacts" />
+            <marker date="1492362808000" expanded="true" signature="410:437" ph="insert into contacts... " />
+            <marker date="1492362808000" expanded="true" signature="410:451" ph="insert into contacts... " />
+            <marker date="1492362808000" expanded="true" signature="410:478" ph="insert into contacts... " />
+            <marker date="1492362808000" expanded="true" signature="410:514" ph="insert into contacts... " />
+            <marker date="1492362808000" expanded="true" signature="1475:1523" ph="SELECT * fro... contacts" />
           </folding>
         </state>
       </provider>
@@ -884,21 +883,21 @@
             <element signature="e#448#454#0#HTML" expanded="true" />
             <element signature="e#454#460#0#HTML" expanded="true" />
             <element signature="e#460#466#0#HTML" expanded="true" />
-            <marker date="1492362208000" expanded="true" signature="568:655" ph="SELECT * FRO... media" />
+            <marker date="1492362741000" expanded="true" signature="568:655" ph="SELECT * FRO... media" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/contacts.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="79" lean-forward="false" selection-start-line="9" selection-start-column="79" selection-end-line="9" selection-end-column="79" />
+        <state relative-caret-position="300">
+          <caret line="20" column="75" lean-forward="true" selection-start-line="20" selection-start-column="75" selection-end-line="20" selection-end-column="75" />
           <folding>
-            <marker date="1492362701000" expanded="true" signature="401:428" ph="insert into contacts... " />
-            <marker date="1492362701000" expanded="true" signature="401:442" ph="insert into contacts... " />
-            <marker date="1492362701000" expanded="true" signature="401:469" ph="insert into contacts... " />
-            <marker date="1492362701000" expanded="true" signature="401:505" ph="insert into contacts... " />
-            <marker date="1492362701000" expanded="true" signature="1466:1514" ph="SELECT * fro... contacts" />
+            <marker date="1492362808000" expanded="true" signature="410:437" ph="insert into contacts... " />
+            <marker date="1492362808000" expanded="true" signature="410:451" ph="insert into contacts... " />
+            <marker date="1492362808000" expanded="true" signature="410:478" ph="insert into contacts... " />
+            <marker date="1492362808000" expanded="true" signature="410:514" ph="insert into contacts... " />
+            <marker date="1492362808000" expanded="true" signature="1475:1523" ph="SELECT * fro... contacts" />
           </folding>
         </state>
       </provider>
