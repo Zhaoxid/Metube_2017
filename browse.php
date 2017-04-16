@@ -65,12 +65,13 @@ function saveDownload(id)
 				$mediaid = $result_row[3];
 				$filename = $result_row[0];
 				$filenpath = $result_row[4];
+				$username = $result_row[1];
 				$title=$result_row[6];
 		?>
         	 <tr valign="top">			
 			    <td>
 					<?php 
-						echo $mediaid;  //mediaid
+						echo $username;  //mediaid
 					?>
 		    	</td>
                  <td>
