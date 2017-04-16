@@ -14,6 +14,8 @@
 
 <body>
 
+<p>Welcome <?php echo $_SESSION['username'];?> <a href="javascript:history.back();">[Go Back]</a> </p>
+
 <?php
 if(isset($_GET['search'])){
 	$query1= "SELECT * FROM media WHERE title='".$_GET['search']."' OR username='".$_GET['search']."'";
@@ -55,5 +57,6 @@ if(isset($_GET['search'])){
 <?php
 }	
 ?>
+
 </body>
 </html>
