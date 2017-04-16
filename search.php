@@ -13,7 +13,6 @@
 </head>
 
 <body>
-<p>Welcome <?php echo $_SESSION['username'];?></p>
 
 <?php
 if(isset($_GET['search'])){

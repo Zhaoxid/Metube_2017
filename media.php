@@ -58,7 +58,7 @@ if(isset($_GET['id'])) {
 
 </object>
 
-<h3>Description:<h3>
+<h3>Description:</h3>
 <p><?php echo $result_row[5];?></p>      
               
 <?php
