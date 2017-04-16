@@ -2,6 +2,7 @@
 <?php
     session_start();
     include_once "function.php";
+
 if(isset($_POST['submit'])) {
     $check = user_exist($_POST['user2']);
 

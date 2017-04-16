@@ -50,10 +50,10 @@ include_once "function.php";
 
 <?php
     $user = $_SESSION['username'];
-    $query = "SELECT * from message where rcvusername = '$user'";
+    $query = "SELECT * from message where rcvusername = '$user' order by ts DESC";
     $result = mysql_query( $query );
     if (!$result){
-        die ("Could not query the media table in the database: <br />". mysql_error());
+        die ("Could not query the message table in the database: <br />". mysql_error());
     }
 ?>
 

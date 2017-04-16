@@ -9,6 +9,12 @@
 <title>Media</title>
 <script src="Scripts/AC_ActiveX.js" type="text/javascript"></script>
 <script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+<style>
+    td, th {
+        text-align: center;
+        padding:4px;
+    }
+</style>
 </head>
 
 <body>
@@ -65,5 +71,42 @@ else
 <?php
 }
 ?>
+
+Comment:
+<form action="submit_comment.php?id=<?php echo $_GET['id'];?>" method="POST">
+    <textarea name="comment" cols="80" rows="8" placeholder="Type the Comment"></textarea><br/>
+    <input type="submit" value="Send">
+</form>
+<br/><br/>
+<?php
+$query = "SELECT * from comments where mediaid = '".$_GET['id']."' order by ts DESC";
+$result = mysql_query( $query );
+if (!$result){
+    die ("Could not query the media comment table in the database: <br />". mysql_error());
+}
+?>
+
+<table>
+    <col width="100">
+    <col width="135">
+    <col width="530">
+
+    <tr>
+        <th> Username </th>
+        <th> Date </th>
+        <th> Comment </th>
+    </tr>
+    <?php
+    while ($result_row = mysql_fetch_row($result)) {
+        ?>
+        <tr>
+            <td> <?php echo $result_row[1];?></td>
+            <td> <?php echo $result_row[3];?></td>
+            <td> <?php echo $result_row[0];?></td>
+        </tr>
+        <?php
+    } ?>
+</table>
+
 </body>
 </html>
