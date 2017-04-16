@@ -32,7 +32,7 @@ function saveDownload(id)
 <a href='contacts.php'  style="color:#FF9900;">Contacts</a><br>
 <a href='index.php'  style="color:#FF9900;">Logout</a> <br>
 
-<form action = 'search.php' method='GET' >
+<form action = "search.php" method="GET" >
 	<input type = 'text' size='90' name='search' >
 	<input type = 'submit' name='submit' value='Search files'>
 </form>

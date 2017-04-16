@@ -17,7 +17,7 @@
 
 <?php
 if(isset($_GET['search'])){
-	$querry1= "SELECT * FROM media WHERE title='".$_GET['search']."' OR username='".$_GET['search']."'";
+	$query1= "SELECT * FROM media WHERE title='".$_GET['search']."' OR username='".$_GET['search']."'";
 	//$querry2= "SELECT * FROM tags WHERE tag='".$_GET['search']."'";
 	
 	$result1 = mysql_query($query1);
