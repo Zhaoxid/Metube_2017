@@ -8,7 +8,6 @@ if(isset($_POST['submit'])) {
 
     if ($check == 2) {
         echo "<script type='text/javascript'>alert('Contact does not exist!')</script>";
-        exit(-1);
     }
 
     $relationship = $_POST['relation'];
