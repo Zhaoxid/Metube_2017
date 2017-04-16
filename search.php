@@ -56,5 +56,5 @@ if(isset($_GET['search'])){
 <?php
 }	
 ?>
-<body>
+</body>
 </html>
