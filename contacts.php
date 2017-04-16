@@ -10,14 +10,16 @@ if(isset($_POST['submit'])) {
         echo "<script type='text/javascript'>alert('Contact does not exist!')</script>";
     }
 
-    $relationship = $_POST['relation'];
-    $username = $_SESSION['username'];
-    $user2 = $_POST['user2'];
-    $query = "insert into contacts values ('$username', '$relationship', '$user2')";
-    $result = mysql_query($query);
-    if(!$result) die("error adding contact.".mysql_error());
+    else {
+        $relationship = $_POST['relation'];
+        $username = $_SESSION['username'];
+        $user2 = $_POST['user2'];
+        $query = "insert into contacts values ('$username', '$relationship', '$user2')";
+        $result = mysql_query($query);
+        if (!$result) die("error adding contact." . mysql_error());
 
-    echo "<script type='text/javascript'>alert('Contact Added!')</script>";
+        echo "<script type='text/javascript'>alert('Contact Added!')</script>";
+    }
 }
 ?>
 
