@@ -10,7 +10,7 @@ $deleteMedia="delete from media where mediaid = '$mediaid'";
 $result = mysql_query($deleteMedia);
 if(!$result) {
     echo "delete error";
-    
+
 
 }
 ?>

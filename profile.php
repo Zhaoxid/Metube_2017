@@ -2,13 +2,6 @@
 <?php
 session_start();
 include_once "function.php";
-if(isset($_POST['submit'])) {
-    $deleteMedia = "delete from media where mediaid='".$_GET['id']."'";
-    $result = mysql_query($deleteMedia);
-    if (!$result) {
-        echo "delete error";
-    }
-}
 ?>
 <head>
     <style>
