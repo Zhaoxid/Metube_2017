@@ -22,10 +22,10 @@ function saveDownload(id)
 	{
        id: id,
 	},
-	function(message) 
+	function(message)
     { }
  	);
-} 
+}
 </script>
 </head>
 
@@ -52,7 +52,7 @@ function saveDownload(id)
     <i class="fa fa-remove"></i>
   </a>
   <h4 class="w3-bar-item"><b>Menu</b></h4>
-  <a class="w3-bar-item w3-button w3-hover-black" href='update_profile.php'>Update Profile</a> <br>
+  <a class="w3-bar-item w3-button w3-hover-black" href='profile.php'>Profile</a> <br>
   <a class="w3-bar-item w3-button w3-hover-black" href='media_upload.php'>Upload File</a> <br>
   <a class="w3-bar-item w3-button w3-hover-black" href='message.php'>Message&Inbox</a> <br>
   <a class="w3-bar-item w3-button w3-hover-black" href='contacts.php'>Contacts</a><br>
@@ -114,7 +114,7 @@ function saveDownload(id)
                      <a href="media.php?id=<?php echo $mediaid;?>" target="_blank"><?php echo $title;?></a>
                  </td>
                  <td>
-                     <a href="<?php  echo $filenpath;?>" target="_blank" onclick="javascript:saveDownload(<?php echo $result_row[4];?>);">Download</a>
+                     <a href="<?php  echo $filenpath;?>" target="_blank" onclick="javascript:saveDownload(<?php echo $result_row[3];?>);">Download</a>
                  </td>
 		    </tr>
         	<?php
