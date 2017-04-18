@@ -27,5 +27,5 @@ if(!$insertresult) {
 echo "<script type='text/javascript'>alert('Changed successfully!')</script>";
 
 ?>
-<a href="javascript:history.back();">[Go Back]</a>
+<meta http-equiv="refresh" content="0; url=media.php?id=<?php echo $mediaid;?>" />
 </html>
