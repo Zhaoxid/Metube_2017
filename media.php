@@ -58,6 +58,18 @@ if(isset($_GET['id'])) {
 
 </object>
 
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" width="550"
+height="400" id="MediaPlayer">
+<param name=movie value="<?php echo $result_row[4];?>">
+<param name=quality value=high>
+<param name=bgcolor value=#FFFFFF>
+<embed src="<?php echo $filepath; ?>"
+quality=high bgcolor=#FFFFFF width="550" height="400"
+name="myMovieName" align="" type="application/xshockwave-flash"
+PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer"></embed>
+</object>
+
 <h3>Description:</h3>
 <p><?php echo $result_row[5];?></p>      
               
