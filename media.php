@@ -24,6 +24,9 @@ if(isset($_GET['id'])) {
 	$result = mysql_query( $query );
 	$result_row = mysql_fetch_row($result);
 	
+    //update view count
+	mysql_query("UPDATE media SET views = views + 1 WHERE mediaid='".$_GET['id']."'");
+	
 	//updateMediaTime($_GET['id']);
 	
 	$filename=$result_row[0];   ////0, 4, 2
