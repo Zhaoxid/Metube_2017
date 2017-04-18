@@ -90,10 +90,37 @@ function upload_error($result)
 		return  "Upload file failed";
 	}
 }
-
-function other()
+/*
+if (isset($_POST['action'])) {
+	switch ($_POST['action']) {
+		case 'Username':
+			Username();
+			break;
+	}
+} */
+/*
+function Username()
 {
-	//You can write your own functions here.
+
+        $query = "SELECT * from media ORDER BY username";
+        $result = mysql_query( $query );
+        if (!$result){
+           die ("Could not query the media table in the database: <br />".
+                mysql_error());
+        }
+	
+}
+*/
+
+function Title()
+{
+
+        $query = "SELECT * from media ORDER BY title";
+        $result = mysql_query( $query );
+        if (!$result){
+           die ("Could not query the media table in the database: <br />".
+                mysql_error());
+        }
 }
 	
 ?>

@@ -81,6 +81,37 @@ function saveDownload(id)
 	   die ("Could not query the media table in the database: <br />". mysql_error());
 	}
 ?>
+
+<!-- Functions for sorting the files -->
+<?php
+if(isset($_REQUEST['Title'])){
+        $query = "SELECT * from media ORDER BY title";
+	$result = mysql_query( $query );
+	if (!$result){
+	   die ("Could not query the media table in the database: <br> />". mysql_error());
+	}
+}
+
+if(isset($_REQUEST['Username'])){
+        $query = "SELECT * from media ORDER BY username";
+        $result = mysql_query( $query );
+        if (!$result){
+           die ("Could not query the media table in the database: <br> />". mysql_error());
+        }
+}
+
+
+if(isset($_REQUEST['Views'])){
+        $query = "SELECT * from media ORDER BY views";
+        $result = mysql_query( $query );
+        if (!$result){
+           die ("Could not query the media table in the database: <br> />". mysql_error());
+        }
+}
+
+
+?>
+
     
 
 <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
@@ -97,9 +128,18 @@ function saveDownload(id)
 
 	<table width="50%" cellpadding="0" cellspacing="0">
 	<tr>
-		<th align="left">Username</th>
-		<th align="left">File Title</th>
-		<th></th>
+		<form>
+		<th align="left">
+			<input type="submit" name="Username" 
+			value="Username"></th>
+		<th align="left">
+			<input type='submit' name='Title' value="File Title">
+			</th>
+		<th align="left">Download Link</th>
+		<th align="left">
+			<input type="submit" name="Views" value="View Count">
+			</th>
+		</form>
 		<?php
 			while ($result_row = mysql_fetch_row($result)) //filename, username, type, mediaid, path
 			{ 
@@ -120,7 +160,7 @@ function saveDownload(id)
                  </td>
                  <td>
                      <a href="<?php  echo $filenpath;?>" target="_blank" onclick="javascript:saveDownload(<?php echo $result_row[4];?>);">Download</a>
-                 </td>
+                 </td> 
 				 <td>
 					<?php echo $result_row[7]; ?>
 				 </td>
