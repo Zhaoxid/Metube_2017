@@ -45,16 +45,18 @@ if(isset($_GET['id'])) {
 	<!-- <p>Viewing Video:<?php echo $result_row[2].$result_row[1];?></p> -->
 	<h2>Viewing Video:<?php echo $result_row[6];?></h2>
 
-<OBJECT id='rvocx' classid='clsid:CFCDAA03-8BE4-11cf-B84B-
-0020AFBBCCFA' width="320" height="240">
-<param name='src' value="http://servername/path/to/media.file">
-<param name='autostart' value="true">
-<param name='controls' value='imagewindow'>
-<param name='console' value='video'>
-<param name='loop' value="true">
-<EMBED src="$filepath" width="320"
-height="240" loop="true" type='audio/x-pn-realaudio-plugin'
-controls='imagewindow' console='video' autostart="true">
+<OBJECT ID="MediaPlayer" WIDTH=320 HEIGHT=240
+CLASSID="CLSID:22D6f312-B0F6-11D0-94AB-0080C74C7E95"
+STANDBY="Loading Windows Media Player components..."
+TYPE="application/x-oleobject"
+CODEBASE="http://activex.microsoft.com/activex/controls/mplay
+er/en/nsmp2inf.cab#Version=6,4,7,1112">
+<PARAM name="autoStart" value="True">
+<PARAM name="$filename"
+value="$filepath">
+<EMBED TYPE="application/x-mplayer2"
+SRC="$filepath" NAME="MediaPlayer"
+WIDTH=320 HEIGHT=240>
 </EMBED>
 </OBJECT>
 
