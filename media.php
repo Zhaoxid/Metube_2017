@@ -45,17 +45,18 @@ if(isset($_GET['id'])) {
 	<!-- <p>Viewing Video:<?php echo $result_row[2].$result_row[1];?></p> -->
 	<h2>Viewing Video:<?php echo $result_row[6];?></h2>
 
-<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
-codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" width="550"
-height="400" id="MediaPlayer">
-<param name=movie value="<?php echo $result_row[4];?>">
-<param name=quality value=high>
-<param name=bgcolor value=#FFFFFF>
-<embed src="<?php echo $filepath; ?>"
-quality=high bgcolor=#FFFFFF width="550" height="400"
-name="myMovieName" align="" type="application/xshockwave-flash"
-PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer"></embed>
-</object>
+<OBJECT id='rvocx' classid='clsid:CFCDAA03-8BE4-11cf-B84B-
+0020AFBBCCFA' width="320" height="240">
+<param name='src' value="http://servername/path/to/media.file">
+<param name='autostart' value="true">
+<param name='controls' value='imagewindow'>
+<param name='console' value='video'>
+<param name='loop' value="true">
+<EMBED src="$filepath" width="320"
+height="240" loop="true" type='audio/x-pn-realaudio-plugin'
+controls='imagewindow' console='video' autostart="true">
+</EMBED>
+</OBJECT>
 
 <h3>Description:</h3>
 <p><?php echo $result_row[5];?></p>      
