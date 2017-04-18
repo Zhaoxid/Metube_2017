@@ -35,7 +35,7 @@ if(isset($_GET['id'])) {
 	{
 		?> <h2><?php echo "Viewing Picture:";
 		echo $title; ?></h2>
-		<p><?php echo "<img src='".$filepath."'/>"; ?></p>
+		<img src="<?php echo $filepath; ?>" width = "640" height = "320" >
 		<h3>Description:</h3>
 		<p><?php echo $description;?></p><?php
 	}
