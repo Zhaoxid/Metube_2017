@@ -28,13 +28,28 @@ function user_exist ($username)
     $query = "select * from account where username='$username'";
     $result = mysql_query($query);
     if (!$result) {
-        die ("user_exist_check() failed. Could not query the database: <br />" . mysql_error());
+        die ("user_exist() failed. Could not query the database: <br />" . mysql_error());
     } else {
         $row = mysql_fetch_row($result);
         if (strcmp($row[0], $username))
-            return 2; //no user match
+            return 2;
         else
-            return 0; //Checked.
+            return 0;
+    }
+}
+
+function playlist_check ($playlistid, $username)
+{
+    $query = "select * from playlist_user where username='$username'";
+    $result = mysql_query($query);
+    if (!$result) {
+        die ("playlist_check() failed. Could not query the database: <br />" . mysql_error());
+    } else {
+        $row = mysql_fetch_row($result);
+        if (strcmp($row[0], $playlistid))
+            return 2;
+        else
+            return 0;
     }
 }
 function user_pass_check($username, $password)
