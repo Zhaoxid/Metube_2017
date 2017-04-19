@@ -38,18 +38,34 @@ function user_exist ($username)
     }
 }
 
-function playlist_check ($playlistid, $username)
+function playlist_check ($playlistname, $username)
 {
     $query = "select * from playlist_user where username='$username'";
     $result = mysql_query($query);
     if (!$result) {
         die ("playlist_check() failed. Could not query the database: <br />" . mysql_error());
     } else {
-        $row = mysql_fetch_row($result);
-        if (strcmp($row[0], $playlistid))
-            return 2;
-        else
-            return 0;
+    	while ($row = mysql_fetch_row($result)) {
+            if (!strcmp($row[0], $playlistname)) {
+                return 2;
+            }
+        }
+		return 0;
+    }
+}
+function playlist_media_check ($playlistid, $username)
+{
+    $query = "select * from playlist_user where username='$username'";
+    $result = mysql_query($query);
+    if (!$result) {
+        die ("playlist_check() failed. Could not query the database: <br />" . mysql_error());
+    } else {
+        while ($row = mysql_fetch_row($result)) {
+            if (!strcmp($row[0], $playlistid)) {
+                return 2;
+            }
+        }
+        return 0;
     }
 }
 function user_pass_check($username, $password)
@@ -71,6 +87,12 @@ function user_pass_check($username, $password)
 	}	
 }
 
+function playlistid_check($playlistname, $username) {
+    $query = "select * from playlist_user where username='$username' and playlistname ='$playlistname'";
+    $result = mysql_query( $query );
+	$row = mysql_fetch_row($result);
+	return $row[2];
+}
 function updateMediaTime($mediaid)
 {
 	$query = "	update  media set lastaccesstime=NOW()
@@ -132,6 +154,7 @@ function Username($order)
 
 function Title($order)
 {
+<<<<<<< Updated upstream
 	if ($order == "DESC"){
         	$query = "SELECT * from media ORDER BY title DESC";
 	}
@@ -154,6 +177,9 @@ function Views($order)
         else {
                 $query = "SELECT * from media ORDER BY views ASC";
         }
+=======
+        $query = "SELECT * from media ORDER BY title";
+>>>>>>> Stashed changes
         $result = mysql_query( $query );
         if (!$result){
            die ("Could not query the media table in the database: <br />".

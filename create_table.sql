@@ -11,6 +11,6 @@ create table contacts (username1 varchar(30), relation varchar (10), username2 v
 
 create table comments (cmt varchar (3000), username varchar(30), mediaid int(10), ts timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP );
 
-create table account (playlistid varchar(50) NOT NULL PRIMARY KEY, username varchar (30));
+create table playlist_user (playlistname varchar(50), username varchar (30), playlistid int NOT NULL AUTO_INCREMENT PRIMARY KEY);
 
-create table account (playlistid varchar(50) NOT NULL PRIMARY KEY, mediaid int (10));
+create table playlist_media (playlistid int(10), mediaid int (10));

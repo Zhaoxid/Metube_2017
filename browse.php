@@ -75,6 +75,16 @@ function saveDownload(id)
 ?>
 </div>
 <br/><br/>
+<<<<<<< Updated upstream
+=======
+<?php
+	$query = "SELECT * from media"; 
+	$result = mysql_query( $query );
+	if (!$result){
+	   die ("Could not query the media table in the database: <br />". mysql_error());
+	}
+?>
+>>>>>>> Stashed changes
 
 <!-- Functions for sorting the files -->
 <?php
@@ -131,7 +141,11 @@ else {
 	</form>
 
 
+<<<<<<< Updated upstream
 	<table width="75%" cellpadding="0" cellspacing="0">
+=======
+	<table width="60%" cellpadding="0" cellspacing="0">
+>>>>>>> Stashed changes
 	<tr>
 		<form>
 		<th align="left">
@@ -156,6 +170,7 @@ else {
                                         else { echo "ViewsASC"; } ?>"
                                 value="View Count">
 			</th>
+        <th align ="left"> Option </th>
 		</form>
 		<?php
 			while ($result_row = mysql_fetch_row($result)) //filename, username, type, mediaid, path
@@ -181,6 +196,23 @@ else {
 				 <td>
 					<?php echo $result_row[7]; ?>
 				 </td>
+                 <td>
+                     <?php
+                        echo "<form method='post' action= 'add_media_to_playlist.php?mediaid=".$mediaid."'> ";
+                        $query1 = "select * from playlist_user where username = '".$_SESSION['username']."';";
+                        $result1 = mysql_query($query1) or die ("Could not access playlist table".mysql_error());
+                        echo "<select name='playlistname'>";
+                          while($row = mysql_fetch_array($result1) )
+                           {
+                            echo "<option value='".$row[0]."'>".$row[0]."</option>";
+                           }
+                        echo  "</select>";
+                        echo "</td>";
+                        echo "<td>";
+                        echo "<input value='Add to playlist' name='add_to_playlist' type='submit'>";
+                        echo "</form>";
+                     ?>
+                 </td>
 		    </tr>
         	<?php
 			}
