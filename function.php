@@ -154,7 +154,6 @@ function Username($order)
 
 function Title($order)
 {
-<<<<<<< Updated upstream
 	if ($order == "DESC"){
         	$query = "SELECT * from media ORDER BY title DESC";
 	}
@@ -177,9 +176,6 @@ function Views($order)
         else {
                 $query = "SELECT * from media ORDER BY views ASC";
         }
-=======
-        $query = "SELECT * from media ORDER BY title";
->>>>>>> Stashed changes
         $result = mysql_query( $query );
         if (!$result){
            die ("Could not query the media table in the database: <br />".

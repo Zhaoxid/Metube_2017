@@ -75,8 +75,6 @@ function saveDownload(id)
 ?>
 </div>
 <br/><br/>
-<<<<<<< Updated upstream
-=======
 <?php
 	$query = "SELECT * from media"; 
 	$result = mysql_query( $query );
@@ -84,7 +82,6 @@ function saveDownload(id)
 	   die ("Could not query the media table in the database: <br />". mysql_error());
 	}
 ?>
->>>>>>> Stashed changes
 
 <!-- Functions for sorting the files -->
 <?php
@@ -141,11 +138,7 @@ else {
 	</form>
 
 
-<<<<<<< Updated upstream
 	<table width="75%" cellpadding="0" cellspacing="0">
-=======
-	<table width="60%" cellpadding="0" cellspacing="0">
->>>>>>> Stashed changes
 	<tr>
 		<form>
 		<th align="left">
