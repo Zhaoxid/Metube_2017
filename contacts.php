@@ -58,6 +58,7 @@ if(isset($_POST['submit'])) {
   <div class="w3-row w3-padding-64">
     <div class="w3-twothird w3-container">
       <h1 class="w3-text-teal">Contacts</h1>
+        <table width="75%" cellpadding="0" cellspacing="0">
 
 
 
@@ -86,15 +87,15 @@ if (!$result){
     die ("Could not query the media table in the database: <br />". mysql_error());
 }
 ?>
-<!-- <div style="background:#339900;color:#FFFFFF; margin-left:250px; width:200px;">Contacts List</div> -->
+<!-- <div style="background:#339900;color:#FFFFFF; margin-left:250px; width:200px;">Contacts List</div> --> 
     <col width="30">
     <col width="100">
-    <col width="100">
+    <col width="100">:
 
     <tr>
         <th> </th>
-        <th> Username</th>
-        <th> Relation </th>
+        <th align="left"> Username</th>
+        <th align="left"> Relation </th>
     </tr>
     <?php
     $id = 0;
@@ -105,7 +106,7 @@ if (!$result){
             <td> <?php echo $id, ".";?></td>
             <td> <?php echo $result_row[2];?></td>
             <td> <?php echo $result_row[1];?></td>
-            <td> <button onclick="window.open('create_message.php?id=<?php echo $result_row[2];?>', 'newwindow',
+            <td align=> <button onclick="window.open('create_message.php?id=<?php echo $result_row[2];?>', 'newwindow',
             'width=700, height=350, top=300, left = 450' ); ">Message</button> </td>
 
         </tr>
