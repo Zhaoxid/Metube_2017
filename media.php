@@ -48,20 +48,12 @@ if(isset($_GET['id'])) {
 	<!-- <p>Viewing Video:<?php echo $result_row[2].$result_row[1];?></p> -->
 	<h2>Viewing Video:<?php echo $result_row[6];?></h2>
 
-<OBJECT ID="MediaPlayer" WIDTH=320 HEIGHT=240
-CLASSID="CLSID:22D6f312-B0F6-11D0-94AB-0080C74C7E95"
-STANDBY="Loading Windows Media Player components..."
-TYPE="application/x-oleobject"
-CODEBASE="http://activex.microsoft.com/activex/controls/mplay
-er/en/nsmp2inf.cab#Version=6,4,7,1112">
-<PARAM name="autoStart" value="True">
-<PARAM name="$filename"
-value="$filepath">
-<EMBED TYPE="application/x-mplayer2"
-SRC="$filepath" NAME="MediaPlayer"
-WIDTH=320 HEIGHT=240>
-</EMBED>
-</OBJECT>
+        <object classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" width="320" height="256" codebase="http://www.apple.com/qtactivex/qtplugin.cab#version=6,0,2,0" align="middle" >
+            <param name="src" value="<?php echo $result_row[4];?>" />
+            <param name="autoplay" value="true" />
+            <embed src="<?php echo $result_row[4];?>" width="320" height="256" pluginspage=http://www.apple.com/quicktime/download/ align="middle" autoplay="true" bgcolor="black" >
+            </embed>
+        </object>
 
 <h3>Description:</h3>
 <p><?php echo $result_row[5];?></p>      
