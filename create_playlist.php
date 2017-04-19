@@ -8,17 +8,17 @@ if(empty($_SESSION['username'])){
 }
 
 if(isset($_POST['submit_playlist']))	{
-    $id = $_POST['playlistid'];
+    $name = $_POST['playlistname'];
     $user = $_SESSION['username'];
 
-    $check = playlist_check($id, $user);
+    $check = playlist_check($name, $user);
 
-    if (check == 2) {
+    if ($check == 2) {
         Print '<script>alert("Playlist already exist!");</script>';
         Print '<script>window.location.assign("playlist.php");</script>';
     }
     else {
-        $query = "insert into playlist_user values ('$id','$user');";
+        $query = "insert into playlist_user values ('$name','$user', NULL);";
         $result = mysql_query($query);
         if (!$result) {
             die("create failed.<br/>" . mysql_error());
