@@ -9,4 +9,8 @@ msgid int NOT NULL AUTO_INCREMENT PRIMARY KEY, ts timestamp NOT NULL DEFAULT CUR
 
 create table contacts (username1 varchar(30), relation varchar (10), username2 varchar(30));
 
-create table comments (cmt varchar (3000), username varchar(30), mediaid int(8), ts timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP );
+create table comments (cmt varchar (3000), username varchar(30), mediaid int(10), ts timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP );
+
+create table account (playlistid varchar(50) NOT NULL PRIMARY KEY, username varchar (30));
+
+create table account (playlistid varchar(50) NOT NULL PRIMARY KEY, mediaid int (10));
