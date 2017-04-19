@@ -75,6 +75,10 @@ function saveDownload(id)
 ?>
 </div>
 <br/><br/>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 123e9dee9a459e4642e3314213c04a1bce965d3b
 <?php
 	$query = "SELECT * from media"; 
 	$result = mysql_query( $query );
@@ -138,7 +142,13 @@ else {
 	</form>
 
 
+<<<<<<< HEAD
 	<table width="75%" cellpadding="0" cellspacing="0">
+=======
+
+	<table width="75%" cellpadding="0" cellspacing="0">
+
+>>>>>>> 123e9dee9a459e4642e3314213c04a1bce965d3b
 	<tr>
 		<form>
 		<th align="left">
