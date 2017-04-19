@@ -70,7 +70,7 @@ function playlist_media_check ($playlistid, $username)
 }
 function user_pass_check($username, $password)
 {
-	
+
 	$query = "select * from account where username='$username'";
 	$result = mysql_query( $query );
 		
@@ -170,7 +170,6 @@ function Title($order)
 
 function Views($order)
 {
-<<<<<<< HEAD
         if ($order == "DESC"){
                 $query = "SELECT * from media ORDER BY views DESC";
         }
@@ -183,7 +182,6 @@ function Views($order)
                 mysql_error());
         }
         return $result;
-=======
     if ($order == "DESC"){
         $query = "SELECT * from media ORDER BY views DESC";
     }
@@ -197,7 +195,6 @@ function Views($order)
             mysql_error());
     }
     return $result;
->>>>>>> 61177f34a64d90d13877aae1e67d081c2cf00933
 }
 
 
