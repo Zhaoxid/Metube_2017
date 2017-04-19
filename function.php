@@ -155,10 +155,10 @@ function Username($order)
 function Title($order)
 {
 	if ($order == "DESC"){
-        	$query = "SELECT * from media ORDER BY title DESC";
+        $query = "SELECT * from media ORDER BY title DESC";
 	}
 	else {
-        	$query = "SELECT * from media ORDER BY title ASC";
+        $query = "SELECT * from media ORDER BY title ASC";
 	}
         $result = mysql_query( $query );
         if (!$result){
@@ -170,6 +170,7 @@ function Title($order)
 
 function Views($order)
 {
+<<<<<<< HEAD
         if ($order == "DESC"){
                 $query = "SELECT * from media ORDER BY views DESC";
         }
@@ -182,6 +183,21 @@ function Views($order)
                 mysql_error());
         }
         return $result;
+=======
+    if ($order == "DESC"){
+        $query = "SELECT * from media ORDER BY views DESC";
+    }
+    else {
+        $query = "SELECT * from media ORDER BY views ASC";
+    }
+    $query = "SELECT * from media ORDER BY title";
+    $result = mysql_query( $query );
+    if (!$result){
+        die ("Could not query the media table in the database: <br />".
+            mysql_error());
+    }
+    return $result;
+>>>>>>> 61177f34a64d90d13877aae1e67d081c2cf00933
 }
 
 

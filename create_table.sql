@@ -2,7 +2,14 @@ create table account (username varchar(30) NOT NULL PRIMARY KEY, password varcha
 
 create table media (filename varchar(40), username varchar(40), type varchar(30), mediaid int NOT NULL AUTO_INCREMENT PRIMARY KEY, path varchar(100), description varchar(1000), title varchar(50), views int NOT NULL);
 
-create table tags(media int NOT NULL, tag varchar(30), tagid int NOT NULL AUTO_INCREMENT PRIMARY KEY);
+create table tags(
+	media int NOT NULL,
+	tag varchar(30),
+	tagid int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	FOREIGN KEY(media) REFERENCES media(mediaid)
+		ON DELETE CASCADE
+		ON UPDATE CASCADE
+);
 
 create table message (message varchar (3000), subj varchar(500), sdusername varchar(40), rcvusername varchar(40),
 msgid int NOT NULL AUTO_INCREMENT PRIMARY KEY, ts timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP );
