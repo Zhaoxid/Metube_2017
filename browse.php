@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-<!-- <link rel="stylesheet" type="text/css" href="css/default.css" /> -->
+<link rel="stylesheet" href="css/default.css" />
 <script type="text/javascript" src="js/jquery-latest.pack.js"></script>
 <script type="text/javascript">
 function saveDownload(id)
@@ -73,46 +73,49 @@ function saveDownload(id)
 ?>
 </div>
 <br/><br/>
-<?php
-
-	$query = "SELECT * from media"; 
-	$result = mysql_query( $query );
-	if (!$result){
-	   die ("Could not query the media table in the database: <br />". mysql_error());
-	}
-?>
 
 <!-- Functions for sorting the files -->
 <?php
-if(isset($_REQUEST['Title'])){
-        $query = "SELECT * from media ORDER BY title";
-	$result = mysql_query( $query );
-	if (!$result){
-	   die ("Could not query the media table in the database: <br> />". mysql_error());
-	}
+
+if(isset($_REQUEST['TitleASC'])){
+	$result = Title("ASC");	
+	$status = "TitleDESC";
+	
+}
+else if(isset($_REQUEST['TitleDESC'])){
+        $result = Title("DESC");
+	$status = "TitleASC";
 }
 
-if(isset($_REQUEST['Username'])){
-        $query = "SELECT * from media ORDER BY username";
+else if(isset($_REQUEST['UsernameASC'])){
+	$result = Username("ASC");
+	$status = "UsernameDESC";
+}
+
+else if(isset($_REQUEST['UsernameDESC'])){
+        $result = Username("DESC");
+	$status = "UsernameASC";
+}
+
+else if(isset($_REQUEST['ViewsASC'])){
+	$result = Views("ASC");
+	$status = "ViewsDESC";
+}
+
+else if(isset($_REQUEST['ViewsDESC'])){
+        $result = Views("DESC");
+	$status = "ViewsASC";
+}
+
+else {
+        $query = "SELECT * from media";
         $result = mysql_query( $query );
+	$status = "blank";
         if (!$result){
-           die ("Could not query the media table in the database: <br> />". mysql_error());
+           die ("Could not query the media table in the database: <br />". mysql_error());
         }
 }
-
-
-if(isset($_REQUEST['Views'])){
-        $query = "SELECT * from media ORDER BY views";
-        $result = mysql_query( $query );
-        if (!$result){
-           die ("Could not query the media table in the database: <br> />". mysql_error());
-        }
-}
-
-
-?>
-
-    
+?>  
 
 <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
 <div class="w3-main" style="margin-left:250px">
@@ -120,24 +123,36 @@ if(isset($_REQUEST['Views'])){
   <div class="w3-row w3-padding-64">
     <div class="w3-twothird w3-container">
       <h1 class="w3-text-teal">Uploaded Media List</h1>
-	<form action = "search.php" method="GET" >
+	<form action = "search.php" method="GET" > 
         <input type = 'text' size='90' name='search' >
         <input type = 'submit' name='submit' value='Search files'>
 	</form>
 
 
-	<table width="50%" cellpadding="0" cellspacing="0">
+	<table width="75%" cellpadding="0" cellspacing="0">
 	<tr>
 		<form>
 		<th align="left">
-			<input type="submit" name="Username" 
-			value="Username"></th>
+                        <input type="submit" name=
+                                "<?php if ($status == "UsernameDESC"){
+                                                echo $status; }
+                                        else { echo "UsernameASC"; } ?>"
+                                value="Username">
+			</th>
 		<th align="left">
-			<input type='submit' name='Title' value="File Title">
+			<input type="submit" name=
+				"<?php if ($status == "TitleDESC"){
+						echo $status; }
+				  	else { echo "TitleASC"; } ?>"
+				value="File Title">
 			</th>
 		<th align="left">Download Link</th>
 		<th align="left">
-			<input type="submit" name="Views" value="View Count">
+                        <input type="submit" name=
+                                "<?php if ($status == "ViewsDESC"){
+                                                echo $status; }
+                                        else { echo "ViewsASC"; } ?>"
+                                value="View Count">
 			</th>
 		</form>
 		<?php

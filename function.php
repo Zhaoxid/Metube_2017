@@ -1,7 +1,6 @@
 <?php
 include "mysqlClass.inc.php";
 
-
 function user_exist_check ($username, $password){
 	$query = "select * from account where username='$username'";
 	$result = mysql_query( $query );
@@ -98,11 +97,15 @@ if (isset($_POST['action'])) {
 			break;
 	}
 } */
-/*
-function Username()
-{
 
-        $query = "SELECT * from media ORDER BY username";
+function Username($order)
+{
+	if ($order == "DESC") {
+        	$query = "SELECT * from media ORDER BY username DESC";
+	}
+	else {
+                $query = "SELECT * from media ORDER BY username ASC";
+	}
         $result = mysql_query( $query );
         if (!$result){
            die ("Could not query the media table in the database: <br />".
@@ -110,17 +113,39 @@ function Username()
         }
 	
 }
-*/
 
-function Title()
+
+function Title($order)
 {
-
-        $query = "SELECT * from media ORDER BY title";
+	if ($order == "DESC"){
+        	$query = "SELECT * from media ORDER BY title DESC";
+	}
+	else {
+        	$query = "SELECT * from media ORDER BY title ASC";
+	}
         $result = mysql_query( $query );
         if (!$result){
            die ("Could not query the media table in the database: <br />".
                 mysql_error());
         }
+	return $result;
 }
-	
+
+function Views($order)
+{
+        if ($order == "DESC"){
+                $query = "SELECT * from media ORDER BY views DESC";
+        }
+        else {
+                $query = "SELECT * from media ORDER BY views ASC";
+        }
+        $result = mysql_query( $query );
+        if (!$result){
+           die ("Could not query the media table in the database: <br />".
+                mysql_error());
+        }
+        return $result;
+}
+
+
 ?>
