@@ -52,7 +52,7 @@ if(!file_exists($dirfile))
 						$insert2="insert into tags(mediaid,tag)"."values('$last_id','$tags[$i]')";
 						$query2=mysql_query($insert2)
 							or die("Insert into Tags error in media_upload_process.php " .mysql_error());
-					} */
+					} 
 					$result="0";
 				}
 			}
