@@ -53,6 +53,7 @@ function saveDownload(id)
   </a>
   <h4 class="w3-bar-item"><b>Menu</b></h4>
   <a class="w3-bar-item w3-button w3-hover-black" href='profile.php'>Profile</a> <br>
+  <a class="w3-bar-item w3-button w3-hover-black" href='browse.php'>Browse</a> <br>
   <a class="w3-bar-item w3-button w3-hover-black" href='media_upload.php'>Upload File</a> <br>
   <a class="w3-bar-item w3-button w3-hover-black" href='playlist.php'>Playlist</a> <br>
   <a class="w3-bar-item w3-button w3-hover-black" href='message.php'>Message&Inbox</a> <br>
