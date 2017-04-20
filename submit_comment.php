@@ -30,7 +30,7 @@ if(empty($_SESSION['username'])) {
     }
 
     echo "<script type='text/javascript'>alert('Changed successfully!')</script>";
+}
 ?>
 <meta http-equiv="refresh" content="0; url=media.php?id=<?php echo $mediaid;?>" />
-<?php } ?>
 </html>
