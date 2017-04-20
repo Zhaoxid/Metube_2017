@@ -87,6 +87,7 @@ if (!$resultd){
          die ("Could not query the media table in the database: <br> />". mysql_error());
 }
 $request = 2;
+echo "<meta http-equiv=\"refresh\" content=\"0; url=playlist.php\" />";
 }
 ?>
 
