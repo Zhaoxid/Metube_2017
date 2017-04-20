@@ -85,8 +85,8 @@ if (!$result){
 
 <table>
     <col width="100">
-    <col width="135">
-    <col width="530">
+    <col width="160">
+    <col width="400">
 
     <tr>
         <th> Username </th>
