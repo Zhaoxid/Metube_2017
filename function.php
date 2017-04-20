@@ -141,17 +141,17 @@ if (isset($_POST['action'])) {
 function Username($order)
 {
 	if ($order == "DESC") {
-        	$query = "SELECT * from media ORDER BY username DESC";
+        $query = "SELECT * from media ORDER BY username DESC";
 	}
 	else {
-                $query = "SELECT * from media ORDER BY username ASC";
+        $query = "SELECT * from media ORDER BY username ASC";
 	}
-        $result = mysql_query( $query );
-        if (!$result){
-           die ("Could not query the media table in the database: <br />".
-                mysql_error());
-        }
-	
+    $result = mysql_query( $query );
+    if (!$result){
+        die ("Could not query the media table in the database: <br />".
+            mysql_error());
+    }
+	return $result;
 }
 
 
@@ -173,25 +173,12 @@ function Title($order)
 
 function Views($order)
 {
-        if ($order == "DESC"){
-                $query = "SELECT * from media ORDER BY views DESC";
-        }
-        else {
-                $query = "SELECT * from media ORDER BY views ASC";
-        }
-        $result = mysql_query( $query );
-        if (!$result){
-           die ("Could not query the media table in the database: <br />".
-                mysql_error());
-        }
-        return $result;
     if ($order == "DESC"){
         $query = "SELECT * from media ORDER BY views DESC";
     }
     else {
         $query = "SELECT * from media ORDER BY views ASC";
     }
-    $query = "SELECT * from media ORDER BY title";
     $result = mysql_query( $query );
     if (!$result){
         die ("Could not query the media table in the database: <br />".

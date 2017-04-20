@@ -53,16 +53,11 @@
 <?php
 if(isset($_GET['search'])){
 	$query1= "SELECT * FROM media WHERE title='".$_GET['search']."' OR username='".$_GET['search']."' OR mediaid IN (SELECT media FROM tags WHERE tag='".$_GET['search']."')";
-	//$querry2= "SELECT * FROM tags WHERE tag='".$_GET['search']."'";
 	
 	$result1 = mysql_query($query1);
 	if (!$result1){
 	   die ("Could not query the media table in the database: <br />". mysql_error());
 	}
-	//$result2 = mysql_query($query2);
-	//if (!$result2){
-	//   die ("Could not query the media table in the database: <br />". mysql_error());
-	//}
 	
 	?>
 	<div style="background:#339900;color:#FFFFFF; width:200px;">Matched Files</div>
