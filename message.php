@@ -91,7 +91,7 @@ if(empty($_SESSION['username'])){
 
   <div class="w3-row w3-padding-64">
     <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal">Inbox</h1>
+      <h1 class="w3-text-teal">Messages</h1>
 
 <button onclick="window.open('create_message.php', 'newwindow', 'width=700, height=350, top=300, left = 450' ); ">Create New Message</button>
 <br><br>
