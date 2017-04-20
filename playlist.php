@@ -51,6 +51,15 @@ $request = 0;
 <input value="Create Playlist" name="submit_playlist" type="submit" /></form><br>
 
 <?php
+    $user = $_SESSION['username'];
+    $q_empty = "SELECT * from playlist_user WHERE username = '$user'";
+    $result_empty = mysql_query( $q_empty );
+    if (!$result_empty){
+        die ("Could not query the media table in the database: <br> />". mysql_error());
+    }
+    $result_empty_row = mysql_fetch_row($result_empty);
+?>
+<?php
 if(isset($_POST['playlist'])){
     $name = $_POST['playlistname'];
     $user = $_SESSION['username'];
@@ -64,6 +73,7 @@ if(isset($_POST['playlist'])){
     $request = 1;
 }
 ?>
+
 <?php
 if(isset($_POST['delete'])){
 $name = $_POST['playlistname'];
@@ -79,33 +89,36 @@ if (!$resultd){
 $request = 2;
 }
 ?>
-            <?php
-            echo "<form method='post' action= 'playlist.php?delete=".$request."'> ";
-            $query1 = "select * from playlist_user where username = '".$_SESSION['username']."';";
-            $result1 = mysql_query($query1) or die ("Could not access playlist table".mysql_error());
-            echo "<select name='playlistname'>";
-            while($row = mysql_fetch_array($result1) )
-            {
-                echo "<option value='".$row[0]."'>".$row[0]."</option>";
-            }
-            echo  "</select>";
-            echo "<input value='Delete' name='delete' type='submit'>";
-            echo "</form>";
-            ?><br><br>
+
+<?php
+if ($result_empty_row) {
+    echo "<form method='post' action= 'playlist.php?delete=" . $request . "'> ";
+    $query1 = "select * from playlist_user where username = '" . $_SESSION['username'] . "';";
+    $result1 = mysql_query($query1) or die ("Could not access playlist table" . mysql_error());
+    echo "<select name='playlistname'>";
+    while ($row = mysql_fetch_array($result1)) {
+        echo "<option value='" . $row[0] . "'>" . $row[0] . "</option>";
+    }
+    echo "</select>";
+    echo "<input value='Delete' name='delete' type='submit'>";
+    echo "</form>";
+}
+?><br><br>
 
 
 <?php
-echo "<form method='post' action= 'playlist.php?playlist=".$request."'> ";
-$query1 = "select * from playlist_user where username = '".$_SESSION['username']."';";
-$result1 = mysql_query($query1) or die ("Could not access playlist table".mysql_error());
-echo "<select name='playlistname'>";
-while($row = mysql_fetch_array($result1) )
-{
-    echo "<option value='".$row[0]."'>".$row[0]."</option>";
+if ($result_empty_row) {
+    echo "<form method='post' action= 'playlist.php?playlist=" . $request . "'> ";
+    $query1 = "select * from playlist_user where username = '" . $_SESSION['username'] . "';";
+    $result1 = mysql_query($query1) or die ("Could not access playlist table" . mysql_error());
+    echo "<select name='playlistname'>";
+    while ($row = mysql_fetch_array($result1)) {
+        echo "<option value='" . $row[0] . "'>" . $row[0] . "</option>";
+    }
+    echo "</select>";
+    echo "<input value='select_playlist' name='playlist' type='submit'>";
+    echo "</form>";
 }
-echo  "</select>";
-echo "<input value='select_playlist' name='playlist' type='submit'>";
-echo "</form>";
 ?><br>
 
 

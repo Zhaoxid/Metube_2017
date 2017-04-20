@@ -17,15 +17,41 @@
       <file leaf-file-name="playlist.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/playlist.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="108" column="6" lean-forward="true" selection-start-line="108" selection-start-column="6" selection-end-line="108" selection-end-column="6" />
+            <state relative-caret-position="84">
+              <caret line="93" column="24" lean-forward="true" selection-start-line="93" selection-start-column="24" selection-end-line="93" selection-end-column="24" />
               <folding>
-                <marker date="1492726924000" expanded="true" signature="2600:2656" ph="SELECT * fro... playlist_media" />
-                <marker date="1492726924000" expanded="true" signature="2984:3037" ph="delete from " />
-                <marker date="1492726924000" expanded="true" signature="2990:3037" ph="SELECT * fro... playlist_media" />
-                <marker date="1492726924000" expanded="true" signature="3329:3401" ph="select * fro... playlist_user" />
-                <marker date="1492726924000" expanded="true" signature="3959:4031" ph="select * fro... playlist_user" />
-                <marker date="1492726924000" expanded="true" signature="4652:4698" ph="SELECT * fro... media" />
+                <marker date="1492728319000" expanded="true" signature="2489:2535" ph="SELECT * fro... playlist_user" />
+                <marker date="1492728319000" expanded="true" signature="2489:2541" ph="SELECT * fro... playlist_user" />
+                <marker date="1492728319000" expanded="true" signature="2489:2783" ph="SELECT * fro... playlist_user" />
+                <marker date="1492728319000" expanded="true" signature="2936:2992" ph="SELECT * fro... playlist_media" />
+                <marker date="1492728319000" expanded="true" signature="3321:3374" ph="delete from " />
+                <marker date="1492728319000" expanded="true" signature="3327:3374" ph="SELECT * fro... playlist_media" />
+                <marker date="1492728319000" expanded="true" signature="3668:3744" ph="select * fro... playlist_user" />
+                <marker date="1492728319000" expanded="true" signature="4262:4338" ph="select * fro... playlist_user" />
+                <marker date="1492728319000" expanded="true" signature="4778:5000" ph="..." />
+                <marker date="1492728319000" expanded="true" signature="4787:4882" ph="..." />
+                <marker date="1492728319000" expanded="true" signature="5002:5048" ph="SELECT * fro... media" />
+                <marker date="1492728319000" expanded="true" signature="5438:5599" ph="..." />
+                <marker date="1492728319000" expanded="true" signature="5455:5557" ph="..." />
+                <marker date="1492728319000" expanded="true" signature="5574:5599" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="delete_contact.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/delete_contact.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="59" lean-forward="true" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
+              <folding>
+                <marker date="1492699993000" expanded="true" signature="301:322" ph="SELECT * fro... media" />
+                <marker date="1492699993000" expanded="true" signature="324:351" ph="delete from " />
+                <marker date="1492699993000" expanded="true" signature="324:362" ph="delete from " />
+                <marker date="1492699993000" expanded="true" signature="324:374" ph="delete from " />
+                <marker date="1492699993000" expanded="true" signature="324:390" ph="delete from " />
+                <marker date="1492699993000" expanded="true" signature="324:399" ph="delete from " />
+                <marker date="1492699993000" expanded="true" signature="499:517" ph="..." />
               </folding>
             </state>
           </provider>
@@ -109,8 +135,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.6" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="381" />
-    <option name="y" value="55" />
+    <option name="x" value="570" />
+    <option name="y" value="91" />
     <option name="width" value="1139" />
     <option name="height" value="947" />
   </component>
@@ -275,15 +301,15 @@
       <workItem from="1492539804093" duration="13701000" />
       <workItem from="1492637787082" duration="5472000" />
       <workItem from="1492695861561" duration="8132000" />
-      <workItem from="1492705643515" duration="3891000" />
+      <workItem from="1492705643515" duration="5294000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73835000" />
+    <option name="totallyTimeSpent" value="75238000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="381" y="55" width="1139" height="947" extended-state="0" />
+    <frame x="570" y="91" width="1139" height="947" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22036874" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -610,22 +636,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/delete_contact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <marker date="1492699993000" expanded="true" signature="301:322" ph="SELECT * fro... media" />
-            <marker date="1492699993000" expanded="true" signature="324:351" ph="delete from " />
-            <marker date="1492699993000" expanded="true" signature="324:362" ph="delete from " />
-            <marker date="1492699993000" expanded="true" signature="324:374" ph="delete from " />
-            <marker date="1492699993000" expanded="true" signature="324:390" ph="delete from " />
-            <marker date="1492699993000" expanded="true" signature="324:399" ph="delete from " />
-            <marker date="1492699993000" expanded="true" signature="499:517" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/function.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="37">
@@ -839,17 +849,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/delete_contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="59" lean-forward="true" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
+          <folding>
+            <marker date="1492699993000" expanded="true" signature="301:322" ph="SELECT * fro... media" />
+            <marker date="1492699993000" expanded="true" signature="324:351" ph="delete from " />
+            <marker date="1492699993000" expanded="true" signature="324:362" ph="delete from " />
+            <marker date="1492699993000" expanded="true" signature="324:374" ph="delete from " />
+            <marker date="1492699993000" expanded="true" signature="324:390" ph="delete from " />
+            <marker date="1492699993000" expanded="true" signature="324:399" ph="delete from " />
+            <marker date="1492699993000" expanded="true" signature="499:517" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/playlist.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="108" column="6" lean-forward="true" selection-start-line="108" selection-start-column="6" selection-end-line="108" selection-end-column="6" />
+        <state relative-caret-position="84">
+          <caret line="93" column="24" lean-forward="true" selection-start-line="93" selection-start-column="24" selection-end-line="93" selection-end-column="24" />
           <folding>
-            <marker date="1492726924000" expanded="true" signature="2600:2656" ph="SELECT * fro... playlist_media" />
-            <marker date="1492726924000" expanded="true" signature="2984:3037" ph="delete from " />
-            <marker date="1492726924000" expanded="true" signature="2990:3037" ph="SELECT * fro... playlist_media" />
-            <marker date="1492726924000" expanded="true" signature="3329:3401" ph="select * fro... playlist_user" />
-            <marker date="1492726924000" expanded="true" signature="3959:4031" ph="select * fro... playlist_user" />
-            <marker date="1492726924000" expanded="true" signature="4652:4698" ph="SELECT * fro... media" />
+            <marker date="1492728319000" expanded="true" signature="2489:2535" ph="SELECT * fro... playlist_user" />
+            <marker date="1492728319000" expanded="true" signature="2489:2541" ph="SELECT * fro... playlist_user" />
+            <marker date="1492728319000" expanded="true" signature="2489:2783" ph="SELECT * fro... playlist_user" />
+            <marker date="1492728319000" expanded="true" signature="2936:2992" ph="SELECT * fro... playlist_media" />
+            <marker date="1492728319000" expanded="true" signature="3321:3374" ph="delete from " />
+            <marker date="1492728319000" expanded="true" signature="3327:3374" ph="SELECT * fro... playlist_media" />
+            <marker date="1492728319000" expanded="true" signature="3668:3744" ph="select * fro... playlist_user" />
+            <marker date="1492728319000" expanded="true" signature="4262:4338" ph="select * fro... playlist_user" />
+            <marker date="1492728319000" expanded="true" signature="4778:5000" ph="..." />
+            <marker date="1492728319000" expanded="true" signature="4787:4882" ph="..." />
+            <marker date="1492728319000" expanded="true" signature="5002:5048" ph="SELECT * fro... media" />
+            <marker date="1492728319000" expanded="true" signature="5438:5599" ph="..." />
+            <marker date="1492728319000" expanded="true" signature="5455:5557" ph="..." />
+            <marker date="1492728319000" expanded="true" signature="5574:5599" ph="..." />
           </folding>
         </state>
       </provider>
