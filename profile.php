@@ -102,10 +102,7 @@ if(empty($_SESSION['username'])) {
       <h1 class="w3-text-teal">Profile</h1>
  <p class="bold">Welcome to metube, <?php echo $_SESSION['username'];?>!</p>
 <a href='update_profile.php'  style="color:#FF9900;">Update Profile</a> <br><br>
-<form action = "search.php" method="GET" >
-        <input type = 'text' size='90' name='search' >
-        <input type = 'submit' name='submit' value='Search files'>
-</form>
+
     <br><br>
 <?php
 $user = $_SESSION['username'];
