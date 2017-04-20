@@ -1,4 +1,12 @@
 <!DOCTYPE html>
+<?php
+session_start();
+include_once "function.php";
+if(empty($_SESSION['username'])) {
+    Print '<script>alert("User not found");</script>';
+    Print '<script>window.location.assign("index.php");</script>';
+}
+?>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -9,10 +17,7 @@
 <script type="text/javascript" src="js/jquery-latest.pack.js"></script>
 <script type="text/javascript">
 
-<?php
-session_start();
-include_once "function.php";
-?>
+
 <head>
     <style>
         button {
@@ -81,7 +86,7 @@ include_once "function.php";
   <a class="w3-bar-item w3-button w3-hover-black" href='playlist.php'>Playlist</a> <br>
   <a class="w3-bar-item w3-button w3-hover-black" href='message.php'>Message&Inbox</a> <br>
   <a class="w3-bar-item w3-button w3-hover-black" href='contacts.php'>Contacts</a><br>
-  <a class="w3-bar-item w3-button w3-hover-black" href='index.php'>Logout</a> <br>
+  <a class="w3-bar-item w3-button w3-hover-black" href='logout.php'>Logout</a> <br>
 
 </nav>
 
@@ -94,14 +99,14 @@ include_once "function.php";
 
   <div class="w3-row w3-padding-64">
     <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal">Uploaded Media List</h1>
+      <h1 class="w3-text-teal">Profile</h1>
  <p class="bold">Welcome to metube, <?php echo $_SESSION['username'];?>!</p>
 <a href='update_profile.php'  style="color:#FF9900;">Update Profile</a> <br><br>
 <form action = "search.php" method="GET" >
         <input type = 'text' size='90' name='search' >
         <input type = 'submit' name='submit' value='Search files'>
 </form>
-
+    <br><br>
 <?php
 $user = $_SESSION['username'];
 $query = "SELECT * from media where username = '$user'";
@@ -110,6 +115,8 @@ if (!$result){
     die ("Could not query the media table in the database: <br />". mysql_error());
 }
 ?>
+
+<h1 class="w3-text-teal">Profile</h1>
 <table width="75%" cellpadding="0" cellspacing="0">
     <col width="30">
     <col width="100">
