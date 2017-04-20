@@ -32,7 +32,7 @@ include_once "function.php";
             font-family: arial, sans-serif;
             font-size: 20px;
             color: black;
-            font-weight = bold;
+            font-weight : bold;
         }
 
         table {

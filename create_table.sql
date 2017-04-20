@@ -2,7 +2,7 @@ create table account (username varchar(30) NOT NULL PRIMARY KEY, password varcha
 
 create table media (
 	filename varchar(40),
-	username varchar(40),
+	username varchar(30),
 	type varchar(30),
 	mediaid int NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	path varchar(100),
@@ -26,8 +26,8 @@ create table tags(
 create table message (
 	message varchar (3000),
 	subj varchar(500),
-	sdusername varchar(40),
-	rcvusername varchar(40),
+	sdusername varchar(30),
+	rcvusername varchar(30),
 	msgid int NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	ts timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
 	FOREIGN KEY(sdusername) REFERENCES account(username)
@@ -42,7 +42,6 @@ create table contacts (
 	username1 varchar(30),
 	relation varchar (10),
 	username2 varchar(30),
-	relationid int NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	FOREIGN KEY(username1) REFERENCES account(username)
 		ON DELETE CASCADE
 		ON UPDATE CASCADE,
@@ -64,6 +63,17 @@ create table comments (
 		ON UPDATE CASCADE
 );
 
+create table playlist_media (
+	playlistid int NOT NULL,
+	mediaid int NOT NULL,
+	FOREIGN KEY(playlistid) REFERENCES playlist_user(playlistid)
+		ON DELETE CASCADE
+        ON UPDATE CASCADE,
+	FOREIGN KEY(mediaid) REFERENCES media(mediaid)
+		ON DELETE CASCADE
+		 ON UPDATE CASCADE
+);
+
 create table playlist_user (
 	playlistname varchar(50),
 	username varchar (30),
@@ -73,13 +83,3 @@ create table playlist_user (
 		ON UPDATE CASCADE
 );
 
-create table playlist_media (
-	playlistid int NOT NULL,
-	mediaid int NOT NULL,
-	FOREIGN KEY(playlistid) REFERENCES playlist_user(playlistid)
-		ON DELETE CASCADE
-		ON DELETE UPDATE,
-	FOREIGN KEY(mediaid) REFERENCES media(mediaid)
-		ON DELETE CASCADE
-		ON DELETE UPDATE
-);

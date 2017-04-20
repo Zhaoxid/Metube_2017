@@ -3,7 +3,9 @@
 session_start();
 include_once "function.php";
 
-$mediaid = $_GET['id'];
+if( isset( $_GET['id'])) {
+    $mediaid = $_GET['id'];
+}
 $username=$_SESSION['username'];
 $query = "SELECT * from media where mediaid = '$mediaid'";
 $resultq = mysql_query($query);
