@@ -162,7 +162,7 @@ else {
                                         else { echo "ViewsASC"; } ?>"
                                 value="View Count">
 			</th>
-        <th align ="left"> Option </th>
+        <th align ="left"> Playlists Available </th>
 		</form>
 		<?php
 			while ($result_row = mysql_fetch_row($result)) //filename, username, type, mediaid, path

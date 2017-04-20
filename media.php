@@ -27,9 +27,7 @@ if(isset($_GET['id'])) {
     //update view count
 	mysql_query("UPDATE media SET views = views + 1 WHERE mediaid='".$_GET['id']."'");
 	
-	//updateMediaTime($_GET['id']);
-	
-	$filename=$result_row[0];   ////0, 4, 2
+	$filename=$result_row[0];   
 	$filepath=$result_row[4]; 
 	$type=$result_row[2];
 	$description=$result_row[5];
