@@ -138,8 +138,8 @@ else {
     <div class="w3-twothird w3-container">
       <h1 class="w3-text-teal">Uploaded Media List</h1>
 	<form action = "search.php" method="GET" > 
-        <input type = 'text' size='90' name='search' >
-        <input type = 'submit' name='submit' value='Search files'>
+        <input type = 'text' size='90' name='search' required >
+        <input type = 'submit' name='submit' value='Search files' >
 	</form>
 	<table width="75%" cellpadding="0" cellspacing="0">
 	<tr>
