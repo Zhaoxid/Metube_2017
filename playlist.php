@@ -47,10 +47,6 @@ $request = 0;
     <div class="w3-row w3-padding-64">
         <div class="w3-twothird w3-container">
             <h1 class="w3-text-teal">Playlists</h1>
-            <form action = "search.php" method="GET" >
-                <input type = 'text' size='90' name='search' >
-                <input type = 'submit' name='submit' value='Search files'>
-            </form>
 <form action="create_playlist.php" method="post" ><input type="text" name="playlistname" placeholder="Enter Playlist Name" required>
 <input value="Create Playlist" name="submit_playlist" type="submit" /></form>
 
