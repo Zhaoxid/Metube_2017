@@ -4,9 +4,8 @@
     <list default="true" id="b6f287eb-8c99-4c89-a9be-bfd558e4e984" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contacts.php" afterPath="$PROJECT_DIR$/contacts.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/create_table.sql" afterPath="$PROJECT_DIR$/create_table.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/delete_contact.php" afterPath="$PROJECT_DIR$/delete_contact.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/media_delete_process.php" afterPath="$PROJECT_DIR$/media_delete_process.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profile.php" afterPath="$PROJECT_DIR$/profile.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,51 +20,51 @@
       <file leaf-file-name="browse.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/browse.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2880">
+            <state relative-caret-position="289">
               <caret line="192" column="110" lean-forward="false" selection-start-line="192" selection-start-column="24" selection-end-line="192" selection-end-column="110" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add_media_to_playlist.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/add_media_to_playlist.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-              <folding>
-                <marker date="1492655151000" expanded="true" signature="841:896" ph="insert into playlist_media... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contacts.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="contacts.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/contacts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1237">
-              <caret line="121" column="0" lean-forward="true" selection-start-line="120" selection-start-column="8" selection-end-line="121" selection-end-column="0" />
+            <state relative-caret-position="883">
+              <caret line="101" column="40" lean-forward="true" selection-start-line="101" selection-start-column="40" selection-end-line="101" selection-end-column="40" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1492697433000" expanded="true" signature="988:1056" ph="insert into contacts... " />
-                <marker date="1492697433000" expanded="true" signature="3533:3581" ph="SELECT * fro... contacts" />
+                <marker date="1492698783000" expanded="true" signature="988:1056" ph="insert into contacts... " />
+                <marker date="1492698783000" expanded="true" signature="3533:3581" ph="SELECT * fro... contacts" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="delete_contact.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="delete_contact.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/delete_contact.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+            <state relative-caret-position="45">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding>
-                <marker date="1492697577000" expanded="true" signature="164:191" ph="delete from " />
-                <marker date="1492697577000" expanded="true" signature="164:202" ph="delete from " />
-                <marker date="1492697577000" expanded="true" signature="164:214" ph="delete from " />
-                <marker date="1492697577000" expanded="true" signature="164:230" ph="delete from " />
-                <marker date="1492697577000" expanded="true" signature="164:238" ph="delete from " />
+                <marker date="1492699866000" expanded="true" signature="142:163" ph="SELECT * fro... media" />
+                <marker date="1492699866000" expanded="true" signature="165:192" ph="delete from " />
+                <marker date="1492699866000" expanded="true" signature="165:203" ph="delete from " />
+                <marker date="1492699866000" expanded="true" signature="165:215" ph="delete from " />
+                <marker date="1492699866000" expanded="true" signature="165:231" ph="delete from " />
+                <marker date="1492699866000" expanded="true" signature="165:240" ph="delete from " />
+                <marker date="1492699866000" expanded="true" signature="340:358" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create_message.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/create_message.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="28" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -73,11 +72,23 @@
       <file leaf-file-name="media_delete_process.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/media_delete_process.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="7" selection-end-column="1" />
+            <state relative-caret-position="105">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="58" />
               <folding>
-                <marker date="1492697567000" expanded="true" signature="160:206" ph="SELECT * fro... media" />
-                <marker date="1492697567000" expanded="true" signature="335:379" ph="delete from " />
+                <marker date="1492699341000" expanded="true" signature="131:177" ph="SELECT * fro... media" />
+                <marker date="1492699341000" expanded="true" signature="306:350" ph="delete from " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="media_download_process.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/media_download_process.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding>
+                <marker date="1492448666000" expanded="true" signature="271:356" ph="insert into download... " />
               </folding>
             </state>
           </provider>
@@ -86,8 +97,8 @@
       <file leaf-file-name="profile.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/profile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-129">
-              <caret line="53" column="28" lean-forward="true" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
+            <state relative-caret-position="341">
+              <caret line="132" column="17" lean-forward="true" selection-start-line="128" selection-start-column="12" selection-end-line="132" selection-end-column="17" />
               <folding>
                 <marker date="1492697014000" expanded="true" signature="3720:3764" ph="SELECT * fro... media" />
               </folding>
@@ -380,12 +391,12 @@
       <workItem from="1492443664597" duration="6768000" />
       <workItem from="1492539804093" duration="13701000" />
       <workItem from="1492637787082" duration="5472000" />
-      <workItem from="1492695861561" duration="1689000" />
+      <workItem from="1492695861561" duration="3602000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63501000" />
+    <option name="totallyTimeSpent" value="65414000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="436" y="30" width="1290" height="947" extended-state="0" />
@@ -690,16 +701,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/media_download_process.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <marker date="1492448666000" expanded="true" signature="271:356" ph="insert into download... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/media_upload.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -786,14 +787,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/browse.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2880">
-          <caret line="192" column="110" lean-forward="false" selection-start-line="192" selection-start-column="24" selection-end-line="192" selection-end-column="110" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -844,34 +837,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/add_media_to_playlist.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-          <folding>
-            <marker date="1492655151000" expanded="true" signature="841:896" ph="insert into playlist_media... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/create_message.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-129">
-          <caret line="53" column="28" lean-forward="true" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
-          <folding>
-            <marker date="1492697014000" expanded="true" signature="3720:3764" ph="SELECT * fro... media" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/create_table.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
@@ -880,39 +845,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contacts.php">
+    <entry file="file://$PROJECT_DIR$/add_media_to_playlist.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1237">
-          <caret line="121" column="0" lean-forward="true" selection-start-line="120" selection-start-column="8" selection-end-line="121" selection-end-column="0" />
+        <state relative-caret-position="308">
+          <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
           <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1492697433000" expanded="true" signature="988:1056" ph="insert into contacts... " />
-            <marker date="1492697433000" expanded="true" signature="3533:3581" ph="SELECT * fro... contacts" />
+            <marker date="1492655151000" expanded="true" signature="841:896" ph="insert into playlist_media... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="132" column="17" lean-forward="true" selection-start-line="128" selection-start-column="12" selection-end-line="132" selection-end-column="17" />
+          <folding>
+            <marker date="1492697014000" expanded="true" signature="3720:3764" ph="SELECT * fro... media" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media_download_process.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <marker date="1492448666000" expanded="true" signature="271:356" ph="insert into download... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/media_delete_process.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="7" selection-end-column="1" />
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="58" />
           <folding>
-            <marker date="1492697567000" expanded="true" signature="160:206" ph="SELECT * fro... media" />
-            <marker date="1492697567000" expanded="true" signature="335:379" ph="delete from " />
+            <marker date="1492699341000" expanded="true" signature="131:177" ph="SELECT * fro... media" />
+            <marker date="1492699341000" expanded="true" signature="306:350" ph="delete from " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/create_message.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/browse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="192" column="110" lean-forward="false" selection-start-line="192" selection-start-column="24" selection-end-line="192" selection-end-column="110" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/delete_contact.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
-            <marker date="1492697577000" expanded="true" signature="164:191" ph="delete from " />
-            <marker date="1492697577000" expanded="true" signature="164:202" ph="delete from " />
-            <marker date="1492697577000" expanded="true" signature="164:214" ph="delete from " />
-            <marker date="1492697577000" expanded="true" signature="164:230" ph="delete from " />
-            <marker date="1492697577000" expanded="true" signature="164:238" ph="delete from " />
+            <marker date="1492699866000" expanded="true" signature="142:163" ph="SELECT * fro... media" />
+            <marker date="1492699866000" expanded="true" signature="165:192" ph="delete from " />
+            <marker date="1492699866000" expanded="true" signature="165:203" ph="delete from " />
+            <marker date="1492699866000" expanded="true" signature="165:215" ph="delete from " />
+            <marker date="1492699866000" expanded="true" signature="165:231" ph="delete from " />
+            <marker date="1492699866000" expanded="true" signature="165:240" ph="delete from " />
+            <marker date="1492699866000" expanded="true" signature="340:358" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contacts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="883">
+          <caret line="101" column="40" lean-forward="true" selection-start-line="101" selection-start-column="40" selection-end-line="101" selection-end-column="40" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1492698783000" expanded="true" signature="988:1056" ph="insert into contacts... " />
+            <marker date="1492698783000" expanded="true" signature="3533:3581" ph="SELECT * fro... contacts" />
           </folding>
         </state>
       </provider>

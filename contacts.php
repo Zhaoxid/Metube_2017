@@ -112,8 +112,11 @@ if (!$result){
             <td> <?php echo $result_row[1];?></td>
             <td align=> <button onclick="window.open('create_message.php?id=<?php echo $result_row[2];?>', 'newwindow',
             'width=700, height=350, top=300, left = 450' ); ">Message</button> </td>
-            <td align=> <button onclick="window.location.href='delete_contact.php?id=<?php echo $result_row[2];?>'">Delete</button> </td>
-
+            <td>
+                <form action="delete_contact.php?id=<?php echo $result_row[2];?>" method="POST">
+                    <b> <input type="submit" value="Delete"></b>
+                </form>
+            </td>
         </tr>
         <?php
     }
