@@ -27,12 +27,10 @@
 <body>
 
 <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
-<div class="w3-main" style="margin-left:250px">
-
+<div class="w3-main">
   <div class="w3-row w3-padding-64">
     <div class="w3-twothird w3-container">
-        <table width="75%" cellpadding="0" cellspacing="0">
-
+        <table width="75%" cellpadding="0" cellspacing="0
 <?php
 if(isset($_GET['id'])) {
 	$query = "SELECT * FROM media WHERE mediaid='".$_GET['id']."'";
