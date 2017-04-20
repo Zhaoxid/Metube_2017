@@ -48,8 +48,7 @@ $request = 0;
         <div class="w3-twothird w3-container">
             <h1 class="w3-text-teal">Playlists</h1>
 <form action="create_playlist.php" method="post" ><input type="text" name="playlistname" placeholder="Enter Playlist Name" required>
-<input value="Create Playlist" name="submit_playlist" type="submit" /></form>
-
+<input value="Create Playlist" name="submit_playlist" type="submit" /></form><br>
 
 <?php
 if(isset($_POST['playlist'])){
@@ -63,6 +62,21 @@ if(isset($_POST['playlist'])){
         die ("Could not query the media table in the database: <br> />". mysql_error());
     }
     $request = 1;
+}
+?>
+<?php
+if(isset($_POST['delete'])){
+$name = $_POST['playlistname'];
+$user = $_SESSION['username'];
+$check = playlistid_check($name, $user);
+
+$queryd = "delete from playlist_user WHERE playlistid = '$check'";
+
+$resultd = mysql_query( $queryd );
+if (!$resultd){
+         die ("Could not query the media table in the database: <br> />". mysql_error());
+}
+$request = 2;
 }
 ?>
 
@@ -79,6 +93,22 @@ echo  "</select>";
 echo "<input value='select_playlist' name='playlist' type='submit'>";
 echo "</form>";
 ?>
+
+<?php
+echo "<form method='post' action= 'playlist.php?delete=".$request."'> ";
+$query1 = "select * from playlist_user where username = '".$_SESSION['username']."';";
+$result1 = mysql_query($query1) or die ("Could not access playlist table".mysql_error());
+echo "<select name='playlistname'>";
+while($row = mysql_fetch_array($result1) )
+{
+      echo "<option value='".$row[0]."'>".$row[0]."</option>";
+}
+echo  "</select>";
+echo "<input value='Delete' name='delete' type='submit'>";
+echo "</form>";
+?>
+
+
 
 <?php
     if ($request == 1) {
