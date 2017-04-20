@@ -52,15 +52,16 @@ function saveDownload(id)
     <i class="fa fa-remove"></i>
   </a>
   <h4 class="w3-bar-item"><b>Menu</b></h4>
-  <a class="w3-bar-item w3-button w3-hover-black" href='profile.php'>Profile</a> <br>
+
   <a class="w3-bar-item w3-button w3-hover-black" href='browse.php'>Browse</a> <br>
-  <a class="w3-bar-item w3-button w3-hover-black" href='media_upload.php'>Upload File</a> <br>
-  <a class="w3-bar-item w3-button w3-hover-black" href='playlist.php'>Playlist</a> <br>
-  <a class="w3-bar-item w3-button w3-hover-black" href='message.php'>Message&Inbox</a> <br>
-  <a class="w3-bar-item w3-button w3-hover-black" href='contacts.php'>Contacts</a><br>
     <?php if(empty($_SESSION['username'])) {?>
   <a class="w3-bar-item w3-button w3-hover-black" href='index.php'>Index</a> <br>
   <?php } else { ?>
+        <a class="w3-bar-item w3-button w3-hover-black" href='profile.php'>Profile</a> <br>
+        <a class="w3-bar-item w3-button w3-hover-black" href='media_upload.php'>Upload File</a> <br>
+        <a class="w3-bar-item w3-button w3-hover-black" href='playlist.php'>Playlist</a> <br>
+        <a class="w3-bar-item w3-button w3-hover-black" href='message.php'>Message&Inbox</a> <br>
+        <a class="w3-bar-item w3-button w3-hover-black" href='contacts.php'>Contacts</a><br>
         <a class="w3-bar-item w3-button w3-hover-black" href='logout.php'>Logout</a> <br>
     <?php }?>
 </nav>
@@ -137,8 +138,8 @@ else {
     <div class="w3-twothird w3-container">
       <h1 class="w3-text-teal">Uploaded Media List</h1>
 	<form action = "search.php" method="GET" > 
-        <input type = 'text' size='90' name='search' >
-        <input type = 'submit' name='submit' value='Search files'>
+        <input type = 'text' size='90' name='search' required >
+        <input type = 'submit' name='submit' value='Search files' >
 	</form>
 	<table width="75%" cellpadding="0" cellspacing="0">
 	<tr>
@@ -165,7 +166,9 @@ else {
                                         else { echo "ViewsASC"; } ?>"
                                 value="View Count">
 			</th>
+            <?php if(!empty($_SESSION['username'])) {?>
         <th align ="left"> Playlists Available </th>
+            <?php }?>
 		</form>
 		<?php
 			while ($result_row = mysql_fetch_row($result)) //filename, username, type, mediaid, path
@@ -191,6 +194,7 @@ else {
 				 <td>
 					<?php echo $result_row[7]; ?>
 				 </td>
+            <?php if(!empty($_SESSION['username'])) {?>
                  <td>
                      <?php
                         echo "<form method='post' action= 'add_media_to_playlist.php?mediaid=".$mediaid."'> ";
@@ -208,6 +212,7 @@ else {
                         echo "</form>";
                      ?>
                  </td>
+            <?php }?>
 		    </tr>
         	<?php
 			}
