@@ -63,30 +63,6 @@ if(!file_exists($dirfile))
 		}
 	}
 	
-	//You can process the error code of the $result here.
-	if(isset($result)) {
-		if($result==1) {
-			$error=""
-		}
-		else if($result==2) {
-			$error=""
-		}
-		else if($result==3) {
-			$error=""
-		}
-		else if($result==4) {
-			$error=""
-		}
-		else if($result==5) {
-			$error=""
-		}
-		else if($result==6) {
-			$error=""
-		}
-		else if($result==7) {
-			$error=""
-		}
-	}
 ?>
 
 <meta http-equiv="refresh" content="0;url=browse.php?result=<?php echo $result;?>">
