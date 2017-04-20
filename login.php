@@ -18,7 +18,7 @@ if(isset($_POST['submit'])) {
 			if($check == 1) {
 				$login_error = "User ".$_POST['username']." not found.";
 			}
-			elseif($check==2) {
+			else if($check==2) {
 				$login_error = "Incorrect password.";
 			}
 			else if($check==0){

@@ -52,7 +52,7 @@
 
 <?php
 if(isset($_GET['search'])){
-	$query1= "SELECT * FROM media WHERE title='".$_GET['search']."' OR username='".$_GET['search']."' OR mediaid IN (SELECT media FROM tags WHERE tag='".$_GET['search']."')";
+	$query1= "SELECT * FROM media WHERE title='".$_GET['search']."' OR username='".$_GET['search']."' OR mediaid IN (SELECT mediaid FROM tags WHERE tag='".$_GET['search']."')";
 	
 	$result1 = mysql_query($query1);
 	if (!$result1){
