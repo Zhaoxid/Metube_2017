@@ -99,7 +99,7 @@ if (!$result){
 <!-- <div style="background:#339900;color:#FFFFFF; margin-left:250px; width:200px;">Contacts List</div> --> 
     <col width="30">
     <col width="100">
-    <col width="100">:
+    <col width="100">
 
     <tr>
         <th> </th>
