@@ -90,8 +90,11 @@ function user_pass_check($username, $password)
 function playlistid_check($playlistname, $username) {
     $query = "select * from playlist_user where username='$username' and playlistname ='$playlistname'";
     $result = mysql_query( $query );
-	$row = mysql_fetch_row($result);
-	return $row[2];
+    if ($result) return 0;
+    else {
+        $row = mysql_fetch_row($result);
+        return $row[2];
+    }
 }
 function updateMediaTime($mediaid)
 {

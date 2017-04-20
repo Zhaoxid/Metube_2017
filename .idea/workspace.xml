@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6f287eb-8c99-4c89-a9be-bfd558e4e984" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contacts.php" afterPath="$PROJECT_DIR$/contacts.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/add_media_to_playlist.php" afterPath="$PROJECT_DIR$/add_media_to_playlist.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/function.php" afterPath="$PROJECT_DIR$/function.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,23 +25,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add_media_to_playlist.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="add_media_to_playlist.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/add_media_to_playlist.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+            <state relative-caret-position="45">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding>
-                <marker date="1492628988000" expanded="true" signature="416:471" ph="insert into playlist_media... " />
+                <marker date="1492655151000" expanded="true" signature="841:896" ph="insert into playlist_media... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contacts.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="function.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/function.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="393">
+              <caret line="90" column="42" lean-forward="true" selection-start-line="90" selection-start-column="42" selection-end-line="90" selection-end-column="42" />
+              <folding>
+                <marker date="1492654778000" expanded="true" signature="98:146" ph="select * fro... account" />
+                <marker date="1492654778000" expanded="true" signature="368:420" ph="insert into account... " />
+                <marker date="1492654778000" expanded="true" signature="685:733" ph="select * fro... account" />
+                <marker date="1492654778000" expanded="true" signature="1109:1163" ph="select * fro... playlist_user" />
+                <marker date="1492654778000" expanded="true" signature="1568:1622" ph="select * fro... playlist_user" />
+                <marker date="1492654778000" expanded="true" signature="2024:2072" ph="select * fro... account" />
+                <marker date="1492654778000" expanded="true" signature="2435:2523" ph="select * fro... playlist_user" />
+                <marker date="1492654778000" expanded="true" signature="2723:2797" ph="update media... " />
+                <marker date="1492654778000" expanded="true" signature="3692:3734" ph="SELECT * fro... media" />
+                <marker date="1492654778000" expanded="true" signature="3774:3815" ph="SELECT * fro... media" />
+                <marker date="1492654778000" expanded="true" signature="4075:4114" ph="SELECT * fro... media" />
+                <marker date="1492654778000" expanded="true" signature="4146:4184" ph="SELECT * fro... media" />
+                <marker date="1492654778000" expanded="true" signature="4473:4512" ph="SELECT * fro... media" />
+                <marker date="1492654778000" expanded="true" signature="4566:4604" ph="SELECT * fro... media" />
+                <marker date="1492654778000" expanded="true" signature="4867:4906" ph="SELECT * fro... media" />
+                <marker date="1492654778000" expanded="true" signature="4944:4982" ph="SELECT * fro... media" />
+                <marker date="1492654778000" expanded="true" signature="5005:5039" ph="SELECT * fro... media" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contacts.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contacts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="43" column="6" lean-forward="true" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
+            <state relative-caret-position="240">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <marker date="1492654397000" expanded="true" signature="882:950" ph="insert into contacts... " />
@@ -127,6 +155,7 @@
       <find>result_r</find>
       <find>mysqli</find>
       <find>table</find>
+      <find>empty</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -148,12 +177,12 @@
         <option value="$PROJECT_DIR$/profile.php" />
         <option value="$PROJECT_DIR$/create_playlist.php" />
         <option value="$PROJECT_DIR$/create_table.sql" />
-        <option value="$PROJECT_DIR$/function.php" />
         <option value="$PROJECT_DIR$/browse.php" />
-        <option value="$PROJECT_DIR$/add_media_to_playlist.php" />
         <option value="$PROJECT_DIR$/playlist.php" />
         <option value="$PROJECT_DIR$/media.php" />
         <option value="$PROJECT_DIR$/contacts.php" />
+        <option value="$PROJECT_DIR$/function.php" />
+        <option value="$PROJECT_DIR$/add_media_to_playlist.php" />
       </list>
     </option>
   </component>
@@ -343,12 +372,12 @@
       <workItem from="1492361986478" duration="2085000" />
       <workItem from="1492443664597" duration="6768000" />
       <workItem from="1492539804093" duration="13701000" />
-      <workItem from="1492637787082" duration="2608000" />
+      <workItem from="1492637787082" duration="3374000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58948000" />
+    <option name="totallyTimeSpent" value="59714000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="311" y="38" width="1242" height="947" extended-state="0" />
@@ -746,14 +775,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/function.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="84" column="38" lean-forward="true" selection-start-line="84" selection-start-column="38" selection-end-line="84" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/create_message.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -779,16 +800,6 @@
         <state relative-caret-position="225">
           <caret line="94" column="0" lean-forward="true" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/add_media_to_playlist.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-          <folding>
-            <marker date="1492628988000" expanded="true" signature="416:471" ph="insert into playlist_media... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -822,14 +833,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/create_table.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/browse.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1060">
@@ -838,14 +841,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/create_table.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/contacts.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="43" column="6" lean-forward="true" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
+        <state relative-caret-position="240">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <marker date="1492654397000" expanded="true" signature="882:950" ph="insert into contacts... " />
             <marker date="1492654397000" expanded="true" signature="3427:3475" ph="SELECT * fro... contacts" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/function.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="90" column="42" lean-forward="true" selection-start-line="90" selection-start-column="42" selection-end-line="90" selection-end-column="42" />
+          <folding>
+            <marker date="1492654778000" expanded="true" signature="98:146" ph="select * fro... account" />
+            <marker date="1492654778000" expanded="true" signature="368:420" ph="insert into account... " />
+            <marker date="1492654778000" expanded="true" signature="685:733" ph="select * fro... account" />
+            <marker date="1492654778000" expanded="true" signature="1109:1163" ph="select * fro... playlist_user" />
+            <marker date="1492654778000" expanded="true" signature="1568:1622" ph="select * fro... playlist_user" />
+            <marker date="1492654778000" expanded="true" signature="2024:2072" ph="select * fro... account" />
+            <marker date="1492654778000" expanded="true" signature="2435:2523" ph="select * fro... playlist_user" />
+            <marker date="1492654778000" expanded="true" signature="2723:2797" ph="update media... " />
+            <marker date="1492654778000" expanded="true" signature="3692:3734" ph="SELECT * fro... media" />
+            <marker date="1492654778000" expanded="true" signature="3774:3815" ph="SELECT * fro... media" />
+            <marker date="1492654778000" expanded="true" signature="4075:4114" ph="SELECT * fro... media" />
+            <marker date="1492654778000" expanded="true" signature="4146:4184" ph="SELECT * fro... media" />
+            <marker date="1492654778000" expanded="true" signature="4473:4512" ph="SELECT * fro... media" />
+            <marker date="1492654778000" expanded="true" signature="4566:4604" ph="SELECT * fro... media" />
+            <marker date="1492654778000" expanded="true" signature="4867:4906" ph="SELECT * fro... media" />
+            <marker date="1492654778000" expanded="true" signature="4944:4982" ph="SELECT * fro... media" />
+            <marker date="1492654778000" expanded="true" signature="5005:5039" ph="SELECT * fro... media" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add_media_to_playlist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <marker date="1492655151000" expanded="true" signature="841:896" ph="insert into playlist_media... " />
           </folding>
         </state>
       </provider>
