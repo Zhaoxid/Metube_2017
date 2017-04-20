@@ -166,7 +166,9 @@ else {
                                         else { echo "ViewsASC"; } ?>"
                                 value="View Count">
 			</th>
+            <?php if(empty($_SESSION['username'])) {?>
         <th align ="left"> Playlists Available </th>
+            <?php }?>
 		</form>
 		<?php
 			while ($result_row = mysql_fetch_row($result)) //filename, username, type, mediaid, path
@@ -192,6 +194,7 @@ else {
 				 <td>
 					<?php echo $result_row[7]; ?>
 				 </td>
+            <?php if(empty($_SESSION['username'])) {?>
                  <td>
                      <?php
                         echo "<form method='post' action= 'add_media_to_playlist.php?mediaid=".$mediaid."'> ";
@@ -209,6 +212,7 @@ else {
                         echo "</form>";
                      ?>
                  </td>
+            <?php }?>
 		    </tr>
         	<?php
 			}
