@@ -11,13 +11,8 @@
 
 <?php
 session_start();
-
 include_once "function.php";
 
-if(empty($_SESSION['username'])){
-    Print '<script>alert("User not found");</script>';
-    Print '<script>window.location.assign("index.php");</script>';
-}
 
 if(isset($_POST['submit'])) {
 	if( $_POST['passowrd1'] != $_POST['passowrd2']) {

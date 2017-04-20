@@ -1,4 +1,12 @@
 <!DOCTYPE HTML>
+<?php
+session_start();
+include_once "function.php";
+if(empty($_SESSION['username'])) {
+    Print '<script>alert("User not found");</script>';
+    Print '<script>window.location.assign("index.php");</script>';
+}
+?>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
@@ -7,14 +15,6 @@
 <link rel="stylesheet" href="css/default.css" />
 
 <?php
-    session_start();
-    include_once "function.php";
-
-if(empty($_SESSION['username'])){
-    Print '<script>alert("User not found");</script>';
-    Print '<script>window.location.assign("index.php");</script>';
-}
-
 if(isset($_POST['submit'])) {
     $check = user_exist($_POST['user2']);
 
@@ -63,7 +63,7 @@ if(isset($_POST['submit'])) {
     <a class="w3-bar-item w3-button w3-hover-black" href='playlist.php'>Playlist</a> <br>
     <a class="w3-bar-item w3-button w3-hover-black" href='message.php'>Message&Inbox</a> <br>
     <a class="w3-bar-item w3-button w3-hover-black" href='contacts.php'>Contacts</a><br>
-    <a class="w3-bar-item w3-button w3-hover-black" href='index.php'>Logout</a> <br>
+    <a class="w3-bar-item w3-button w3-hover-black" href='logout.php'>Logout</a> <br>
 
 </nav>
 

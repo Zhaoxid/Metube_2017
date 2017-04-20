@@ -1,5 +1,10 @@
 <?php
 session_start();
+include_once "function.php";
+if(empty($_SESSION['username'])) {
+    Print '<script>alert("User not found");</script>';
+    Print '<script>window.location.assign("index.php");</script>';
+}
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -29,7 +34,7 @@ session_start();
   <a class="w3-bar-item w3-button w3-hover-black" href='playlist.php'>Playlist</a> <br>
   <a class="w3-bar-item w3-button w3-hover-black" href='message.php'>Message&Inbox</a> <br>
   <a class="w3-bar-item w3-button w3-hover-black" href='contacts.php'>Contacts</a><br>
-  <a class="w3-bar-item w3-button w3-hover-black" href='index.php'>Logout</a> <br>
+  <a class="w3-bar-item w3-button w3-hover-black" href='logout.php'>Logout</a> <br>
 
 </nav>
 

@@ -18,7 +18,7 @@ create table tags(
 	mediaid int NOT NULL,
 	tag varchar(30),
 	tagid int NOT NULL AUTO_INCREMENT PRIMARY KEY,
-	FOREIGN KEY(media) REFERENCES media(mediaid)
+	FOREIGN KEY(mediaid) REFERENCES media(mediaid)
 		ON DELETE CASCADE
 		ON UPDATE CASCADE
 );
@@ -63,17 +63,6 @@ create table comments (
 		ON UPDATE CASCADE
 );
 
-create table playlist_media (
-	playlistid int NOT NULL,
-	mediaid int NOT NULL,
-	FOREIGN KEY(playlistid) REFERENCES playlist_user(playlistid)
-		ON DELETE CASCADE
-        ON UPDATE CASCADE,
-	FOREIGN KEY(mediaid) REFERENCES media(mediaid)
-		ON DELETE CASCADE
-		 ON UPDATE CASCADE
-);
-
 create table playlist_user (
 	playlistname varchar(50),
 	username varchar (30),
@@ -83,3 +72,13 @@ create table playlist_user (
 		ON UPDATE CASCADE
 );
 
+create table playlist_media (
+	playlistid int NOT NULL,
+	mediaid int NOT NULL,
+	FOREIGN KEY(playlistid) REFERENCES playlist_user(playlistid)
+		ON DELETE CASCADE
+    ON UPDATE CASCADE,
+	FOREIGN KEY(mediaid) REFERENCES media(mediaid)
+		ON DELETE CASCADE
+		ON UPDATE CASCADE
+);

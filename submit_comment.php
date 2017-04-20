@@ -2,6 +2,11 @@
 <?php
 session_start();
 include_once "function.php";
+if(empty($_SESSION['username'])) {
+    Print '<script>alert("User not found");</script>';
+    Print '<script>window.location.assign("index.php");</script>';
+}
+
 
 if(isset($_GET['id'])) {
     $mediaid = $_GET['id'];

@@ -57,6 +57,7 @@ function playlist_media_check ($playlistid, $username)
 {
     $query = "select * from playlist_user where username='$username'";
     $result = mysql_query($query);
+
     if (!$result) {
         die ("playlist_check() failed. Could not query the database: <br />" . mysql_error());
     } else {
@@ -73,13 +74,16 @@ function user_pass_check($username, $password)
 
 	$query = "select * from account where username='$username'";
 	$result = mysql_query( $query );
-		
-	if (!$result)
-	{
-	   die ("user_pass_check() failed. Could not query the database: <br />". mysql_error());
-	}
-	else{
-		$row = mysql_fetch_row($result);
+    if (!$result)
+    {
+        die ("user_pass_check() failed. Could not query the database: <br />". mysql_error());
+    }
+
+    $row = mysql_fetch_row($result);
+    if (strcmp($row[0], $username))
+        return 1;
+
+    else{
 		if(strcmp($row[1],$password))
 			return 2; //wrong password
 		else 

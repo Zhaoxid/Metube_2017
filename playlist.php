@@ -30,27 +30,27 @@ $request = 0;
   <a class="w3-bar-item w3-button w3-hover-black" href='playlist.php'>Playlist</a> <br>
   <a class="w3-bar-item w3-button w3-hover-black" href='message.php'>Message&Inbox</a> <br>
   <a class="w3-bar-item w3-button w3-hover-black" href='contacts.php'>Contacts</a><br>
-  <a class="w3-bar-item w3-button w3-hover-black" href='index.php'>Logout</a> <br>
+  <a class="w3-bar-item w3-button w3-hover-black" href='logout.php'>Logout</a> <br>
 
 </nav>
 
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
-<div class="w3-main" style="margin-left:250px"></div>
 
-  <div class="w3-row w3-padding-64"></div>
-    <div class="w3-twothird w3-container"></div>
-      <h1 class="w3-text-teal">Playlists</h1>
-        <form action = "search.php" method="GET" >
-        <input type = 'text' size='90' name='search' >
-        <input type = 'submit' name='submit' value='Search files'>
-        </form>
 
 </head>
 <body>
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
 
+    <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+            <h1 class="w3-text-teal">Playlists</h1>
+            <form action = "search.php" method="GET" >
+                <input type = 'text' size='90' name='search' >
+                <input type = 'submit' name='submit' value='Search files'>
+            </form>
 <form action="create_playlist.php" method="post" ><input type="text" name="playlistname" placeholder="Enter Playlist Name" required>
 <input value="Create Playlist" name="submit_playlist" type="submit" /></form>
 
