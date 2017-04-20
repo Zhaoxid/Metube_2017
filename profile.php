@@ -116,7 +116,7 @@ if (!$result){
 }
 ?>
 
-<h1 class="w3-text-teal">Profile</h1>
+<h1 class="w3-text-teal">Uploaded Videos</h1>
 <table width="75%" cellpadding="0" cellspacing="0">
     <col width="30">
     <col width="100">

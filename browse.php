@@ -58,8 +58,11 @@ function saveDownload(id)
   <a class="w3-bar-item w3-button w3-hover-black" href='playlist.php'>Playlist</a> <br>
   <a class="w3-bar-item w3-button w3-hover-black" href='message.php'>Message&Inbox</a> <br>
   <a class="w3-bar-item w3-button w3-hover-black" href='contacts.php'>Contacts</a><br>
-  <a class="w3-bar-item w3-button w3-hover-black" href='logout.php'>Logout</a> <br>
-
+    <?php if(empty($_SESSION['username'])) {?>
+  <a class="w3-bar-item w3-button w3-hover-black" href='index.php'>Index</a> <br>
+  <?php } else { ?>
+        <a class="w3-bar-item w3-button w3-hover-black" href='logout.php'>Logout</a> <br>
+    <?php }?>
 </nav>
 	
 <!-- Overlay effect when opening sidebar on small screens -->

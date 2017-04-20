@@ -94,11 +94,14 @@ else
 ?>
 
 Comment:
+<?php if(!empty($_SESSION['username'])){ ?>
+
 <form action="submit_comment.php?id=<?php echo $_GET['id'];?>" method="POST">
     <textarea name="comment" cols="80" rows="8" placeholder="Type the Comment"></textarea><br/>
     <input type="submit" value="Send">
 </form>
 <br/><br/>
+<?php } ?>
 <?php
 $query = "SELECT * from comments where mediaid = '".$_GET['id']."' order by ts DESC";
 $result = mysql_query( $query );

@@ -22,6 +22,7 @@ echo date('Y-m-d H:i:s', $ts);
   <h4 class="w3-bar-item"><b>Menu</b></h4>
   <a class="w3-bar-item w3-button w3-hover-black" href="login.php">Login</a>
   <a class="w3-bar-item w3-button w3-hover-black" href="register.php">Register</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="browse.php">Browse</a>
 </nav>
 
 <!-- Overlay effect when opening sidebar on small screens -->
