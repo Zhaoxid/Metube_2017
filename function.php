@@ -90,9 +90,9 @@ function user_pass_check($username, $password)
 function playlistid_check($playlistname, $username) {
     $query = "select * from playlist_user where username='$username' and playlistname ='$playlistname'";
     $result = mysql_query( $query );
-    if ($result) return 0;
+    $row = mysql_fetch_row($result);
+    if (!$row) return 0;
     else {
-        $row = mysql_fetch_row($result);
         return $row[2];
     }
 }

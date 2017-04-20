@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6f287eb-8c99-4c89-a9be-bfd558e4e984" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/media.php" afterPath="$PROJECT_DIR$/media.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/function.php" afterPath="$PROJECT_DIR$/function.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,8 +27,8 @@
       <file leaf-file-name="add_media_to_playlist.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/add_media_to_playlist.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="221">
+              <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
               <folding>
                 <marker date="1492655151000" expanded="true" signature="841:896" ph="insert into playlist_media... " />
               </folding>
@@ -46,29 +46,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="function.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="function.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/function.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="90" column="42" lean-forward="true" selection-start-line="90" selection-start-column="42" selection-end-line="90" selection-end-column="42" />
+            <state relative-caret-position="163">
+              <caret line="94" column="10" lean-forward="true" selection-start-line="94" selection-start-column="10" selection-end-line="94" selection-end-column="10" />
               <folding>
-                <marker date="1492654778000" expanded="true" signature="98:146" ph="select * fro... account" />
-                <marker date="1492654778000" expanded="true" signature="368:420" ph="insert into account... " />
-                <marker date="1492654778000" expanded="true" signature="685:733" ph="select * fro... account" />
-                <marker date="1492654778000" expanded="true" signature="1109:1163" ph="select * fro... playlist_user" />
-                <marker date="1492654778000" expanded="true" signature="1568:1622" ph="select * fro... playlist_user" />
-                <marker date="1492654778000" expanded="true" signature="2024:2072" ph="select * fro... account" />
-                <marker date="1492654778000" expanded="true" signature="2435:2523" ph="select * fro... playlist_user" />
-                <marker date="1492654778000" expanded="true" signature="2723:2797" ph="update media... " />
-                <marker date="1492654778000" expanded="true" signature="3692:3734" ph="SELECT * fro... media" />
-                <marker date="1492654778000" expanded="true" signature="3774:3815" ph="SELECT * fro... media" />
-                <marker date="1492654778000" expanded="true" signature="4075:4114" ph="SELECT * fro... media" />
-                <marker date="1492654778000" expanded="true" signature="4146:4184" ph="SELECT * fro... media" />
-                <marker date="1492654778000" expanded="true" signature="4473:4512" ph="SELECT * fro... media" />
-                <marker date="1492654778000" expanded="true" signature="4566:4604" ph="SELECT * fro... media" />
-                <marker date="1492654778000" expanded="true" signature="4867:4906" ph="SELECT * fro... media" />
-                <marker date="1492654778000" expanded="true" signature="4944:4982" ph="SELECT * fro... media" />
-                <marker date="1492654778000" expanded="true" signature="5005:5039" ph="SELECT * fro... media" />
+                <marker date="1492658735000" expanded="true" signature="98:146" ph="select * fro... account" />
+                <marker date="1492658735000" expanded="true" signature="368:420" ph="insert into account... " />
+                <marker date="1492658735000" expanded="true" signature="685:733" ph="select * fro... account" />
+                <marker date="1492658735000" expanded="true" signature="1109:1163" ph="select * fro... playlist_user" />
+                <marker date="1492658735000" expanded="true" signature="1568:1622" ph="select * fro... playlist_user" />
+                <marker date="1492658735000" expanded="true" signature="2024:2072" ph="select * fro... account" />
+                <marker date="1492658735000" expanded="true" signature="2435:2523" ph="select * fro... playlist_user" />
+                <marker date="1492658735000" expanded="true" signature="2717:2791" ph="update media... " />
+                <marker date="1492658735000" expanded="true" signature="3686:3728" ph="SELECT * fro... media" />
+                <marker date="1492658735000" expanded="true" signature="3768:3809" ph="SELECT * fro... media" />
+                <marker date="1492658735000" expanded="true" signature="4069:4108" ph="SELECT * fro... media" />
+                <marker date="1492658735000" expanded="true" signature="4140:4178" ph="SELECT * fro... media" />
+                <marker date="1492658735000" expanded="true" signature="4467:4506" ph="SELECT * fro... media" />
+                <marker date="1492658735000" expanded="true" signature="4560:4598" ph="SELECT * fro... media" />
+                <marker date="1492658735000" expanded="true" signature="4861:4900" ph="SELECT * fro... media" />
+                <marker date="1492658735000" expanded="true" signature="4938:4976" ph="SELECT * fro... media" />
+                <marker date="1492658735000" expanded="true" signature="4999:5033" ph="SELECT * fro... media" />
               </folding>
             </state>
           </provider>
@@ -140,7 +140,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="media.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="media.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/media.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="372">
@@ -208,10 +208,10 @@
         <option value="$PROJECT_DIR$/create_table.sql" />
         <option value="$PROJECT_DIR$/browse.php" />
         <option value="$PROJECT_DIR$/playlist.php" />
-        <option value="$PROJECT_DIR$/function.php" />
         <option value="$PROJECT_DIR$/add_media_to_playlist.php" />
         <option value="$PROJECT_DIR$/contacts.php" />
         <option value="$PROJECT_DIR$/media.php" />
+        <option value="$PROJECT_DIR$/function.php" />
       </list>
     </option>
   </component>
@@ -401,12 +401,12 @@
       <workItem from="1492361986478" duration="2085000" />
       <workItem from="1492443664597" duration="6768000" />
       <workItem from="1492539804093" duration="13701000" />
-      <workItem from="1492637787082" duration="3908000" />
+      <workItem from="1492637787082" duration="4399000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60248000" />
+    <option name="totallyTimeSpent" value="60739000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="311" y="38" width="1242" height="947" extended-state="0" />
@@ -847,47 +847,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/function.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="90" column="42" lean-forward="true" selection-start-line="90" selection-start-column="42" selection-end-line="90" selection-end-column="42" />
+        <state relative-caret-position="285">
+          <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="88" column="19" lean-forward="false" selection-start-line="88" selection-start-column="19" selection-end-line="88" selection-end-column="19" />
           <folding>
-            <marker date="1492654778000" expanded="true" signature="98:146" ph="select * fro... account" />
-            <marker date="1492654778000" expanded="true" signature="368:420" ph="insert into account... " />
-            <marker date="1492654778000" expanded="true" signature="685:733" ph="select * fro... account" />
-            <marker date="1492654778000" expanded="true" signature="1109:1163" ph="select * fro... playlist_user" />
-            <marker date="1492654778000" expanded="true" signature="1568:1622" ph="select * fro... playlist_user" />
-            <marker date="1492654778000" expanded="true" signature="2024:2072" ph="select * fro... account" />
-            <marker date="1492654778000" expanded="true" signature="2435:2523" ph="select * fro... playlist_user" />
-            <marker date="1492654778000" expanded="true" signature="2723:2797" ph="update media... " />
-            <marker date="1492654778000" expanded="true" signature="3692:3734" ph="SELECT * fro... media" />
-            <marker date="1492654778000" expanded="true" signature="3774:3815" ph="SELECT * fro... media" />
-            <marker date="1492654778000" expanded="true" signature="4075:4114" ph="SELECT * fro... media" />
-            <marker date="1492654778000" expanded="true" signature="4146:4184" ph="SELECT * fro... media" />
-            <marker date="1492654778000" expanded="true" signature="4473:4512" ph="SELECT * fro... media" />
-            <marker date="1492654778000" expanded="true" signature="4566:4604" ph="SELECT * fro... media" />
-            <marker date="1492654778000" expanded="true" signature="4867:4906" ph="SELECT * fro... media" />
-            <marker date="1492654778000" expanded="true" signature="4944:4982" ph="SELECT * fro... media" />
-            <marker date="1492654778000" expanded="true" signature="5005:5039" ph="SELECT * fro... media" />
+            <marker date="1492655788000" expanded="true" signature="612:663" ph="SELECT * FRO... media" />
+            <marker date="1492655788000" expanded="true" signature="781:847" ph="UPDATE media... " />
+            <marker date="1492655788000" expanded="true" signature="2385:2458" ph="SELECT * fro... comments" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/add_media_to_playlist.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="221">
+          <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
           <folding>
             <marker date="1492655151000" expanded="true" signature="841:896" ph="insert into playlist_media... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/media_delete_process.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-          <folding />
+        <state relative-caret-position="135">
+          <caret line="9" column="40" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="9" selection-end-column="40" />
+          <folding>
+            <marker date="1492452810000" expanded="true" signature="127:173" ph="SELECT * fro... media" />
+            <marker date="1492452810000" expanded="true" signature="302:346" ph="delete from " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -910,25 +907,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/media_delete_process.php">
+    <entry file="file://$PROJECT_DIR$/function.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="40" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="9" selection-end-column="40" />
+        <state relative-caret-position="163">
+          <caret line="94" column="10" lean-forward="true" selection-start-line="94" selection-start-column="10" selection-end-line="94" selection-end-column="10" />
           <folding>
-            <marker date="1492452810000" expanded="true" signature="127:173" ph="SELECT * fro... media" />
-            <marker date="1492452810000" expanded="true" signature="302:346" ph="delete from " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="88" column="19" lean-forward="false" selection-start-line="88" selection-start-column="19" selection-end-line="88" selection-end-column="19" />
-          <folding>
-            <marker date="1492655788000" expanded="true" signature="612:663" ph="SELECT * FRO... media" />
-            <marker date="1492655788000" expanded="true" signature="781:847" ph="UPDATE media... " />
-            <marker date="1492655788000" expanded="true" signature="2385:2458" ph="SELECT * fro... comments" />
+            <marker date="1492658735000" expanded="true" signature="98:146" ph="select * fro... account" />
+            <marker date="1492658735000" expanded="true" signature="368:420" ph="insert into account... " />
+            <marker date="1492658735000" expanded="true" signature="685:733" ph="select * fro... account" />
+            <marker date="1492658735000" expanded="true" signature="1109:1163" ph="select * fro... playlist_user" />
+            <marker date="1492658735000" expanded="true" signature="1568:1622" ph="select * fro... playlist_user" />
+            <marker date="1492658735000" expanded="true" signature="2024:2072" ph="select * fro... account" />
+            <marker date="1492658735000" expanded="true" signature="2435:2523" ph="select * fro... playlist_user" />
+            <marker date="1492658735000" expanded="true" signature="2717:2791" ph="update media... " />
+            <marker date="1492658735000" expanded="true" signature="3686:3728" ph="SELECT * fro... media" />
+            <marker date="1492658735000" expanded="true" signature="3768:3809" ph="SELECT * fro... media" />
+            <marker date="1492658735000" expanded="true" signature="4069:4108" ph="SELECT * fro... media" />
+            <marker date="1492658735000" expanded="true" signature="4140:4178" ph="SELECT * fro... media" />
+            <marker date="1492658735000" expanded="true" signature="4467:4506" ph="SELECT * fro... media" />
+            <marker date="1492658735000" expanded="true" signature="4560:4598" ph="SELECT * fro... media" />
+            <marker date="1492658735000" expanded="true" signature="4861:4900" ph="SELECT * fro... media" />
+            <marker date="1492658735000" expanded="true" signature="4938:4976" ph="SELECT * fro... media" />
+            <marker date="1492658735000" expanded="true" signature="4999:5033" ph="SELECT * fro... media" />
           </folding>
         </state>
       </provider>
