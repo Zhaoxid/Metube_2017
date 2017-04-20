@@ -18,20 +18,6 @@
         echo "Error sending message! Username does not exist!";
         exit(-1);
     }
-    if (!$sduser) {
-        echo "Please enter a receiver username!";
-        exit(-1);
-    }
-
-    if (!$subj) {
-	    echo "Please enter subject!";
-	    exit(-1);
-    }
-
-    if (!$msg) {
-	    echo "Please enter the message!";
-	    exit(-1);
-    }
 
     if ($rcvuser == $sduser) {
 	    echo "Cannot send a message to yourself!";
