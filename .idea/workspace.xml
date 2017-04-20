@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6f287eb-8c99-4c89-a9be-bfd558e4e984" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/playlist.php" afterPath="$PROJECT_DIR$/playlist.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profile.php" afterPath="$PROJECT_DIR$/profile.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/browse.php" afterPath="$PROJECT_DIR$/browse.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,24 +14,24 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="browse.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="browse.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/browse.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="945">
-              <caret line="63" column="25" lean-forward="false" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
+            <state relative-caret-position="268">
+              <caret line="62" column="47" lean-forward="true" selection-start-line="62" selection-start-column="47" selection-end-line="62" selection-end-column="47" />
               <folding>
-                <marker date="1492704415000" expanded="true" signature="3190:3209" ph="SELECT * fro... media" />
-                <marker date="1492704415000" expanded="true" signature="4012:4031" ph="SELECT * fro... media" />
-                <marker date="1492704415000" expanded="true" signature="6674:6746" ph="select * fro... playlist_user" />
+                <marker date="1492706016000" expanded="true" signature="3221:3240" ph="SELECT * fro... media" />
+                <marker date="1492706016000" expanded="true" signature="4043:4062" ph="SELECT * fro... media" />
+                <marker date="1492706016000" expanded="true" signature="6705:6777" ph="select * fro... playlist_user" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profile.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="profile.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/profile.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
+            <state relative-caret-position="-165">
               <caret line="104" column="0" lean-forward="true" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
               <folding>
                 <marker date="1492705867000" expanded="true" signature="3709:3753" ph="SELECT * fro... media" />
@@ -184,11 +183,11 @@
         <option value="$PROJECT_DIR$/media_upload.php" />
         <option value="$PROJECT_DIR$/contacts.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/browse.php" />
         <option value="$PROJECT_DIR$/submit_comment.php" />
         <option value="$PROJECT_DIR$/media.php" />
         <option value="$PROJECT_DIR$/playlist.php" />
         <option value="$PROJECT_DIR$/profile.php" />
+        <option value="$PROJECT_DIR$/browse.php" />
       </list>
     </option>
   </component>
@@ -366,12 +365,12 @@
       <workItem from="1492539804093" duration="13701000" />
       <workItem from="1492637787082" duration="5472000" />
       <workItem from="1492695861561" duration="8132000" />
-      <workItem from="1492705643515" duration="190000" />
+      <workItem from="1492705643515" duration="341000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70134000" />
+    <option name="totallyTimeSpent" value="70285000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="251" y="75" width="1384" height="947" extended-state="0" />
@@ -441,9 +440,9 @@
         <state relative-caret-position="135">
           <caret line="9" column="55" lean-forward="false" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
           <folding>
-            <marker date="1492704415000" expanded="true" signature="3190:3209" ph="SELECT * fro... media" />
-            <marker date="1492704415000" expanded="true" signature="4012:4031" ph="SELECT * fro... media" />
-            <marker date="1492704415000" expanded="true" signature="6674:6746" ph="select * fro... playlist_user" />
+            <marker date="1492706016000" expanded="true" signature="3221:3240" ph="SELECT * fro... media" />
+            <marker date="1492706016000" expanded="true" signature="4043:4062" ph="SELECT * fro... media" />
+            <marker date="1492706016000" expanded="true" signature="6705:6777" ph="select * fro... playlist_user" />
           </folding>
         </state>
       </provider>
@@ -509,9 +508,9 @@
         <state relative-caret-position="465">
           <caret line="31" column="59" lean-forward="true" selection-start-line="31" selection-start-column="59" selection-end-line="31" selection-end-column="59" />
           <folding>
-            <marker date="1492704415000" expanded="true" signature="3190:3209" ph="SELECT * fro... media" />
-            <marker date="1492704415000" expanded="true" signature="4012:4031" ph="SELECT * fro... media" />
-            <marker date="1492704415000" expanded="true" signature="6674:6746" ph="select * fro... playlist_user" />
+            <marker date="1492706016000" expanded="true" signature="3221:3240" ph="SELECT * fro... media" />
+            <marker date="1492706016000" expanded="true" signature="4043:4062" ph="SELECT * fro... media" />
+            <marker date="1492706016000" expanded="true" signature="6705:6777" ph="select * fro... playlist_user" />
           </folding>
         </state>
       </provider>
@@ -566,9 +565,9 @@
         <state relative-caret-position="465">
           <caret line="31" column="59" lean-forward="true" selection-start-line="31" selection-start-column="59" selection-end-line="31" selection-end-column="59" />
           <folding>
-            <marker date="1492704415000" expanded="true" signature="3190:3209" ph="SELECT * fro... media" />
-            <marker date="1492704415000" expanded="true" signature="4012:4031" ph="SELECT * fro... media" />
-            <marker date="1492704415000" expanded="true" signature="6674:6746" ph="select * fro... playlist_user" />
+            <marker date="1492706016000" expanded="true" signature="3221:3240" ph="SELECT * fro... media" />
+            <marker date="1492706016000" expanded="true" signature="4043:4062" ph="SELECT * fro... media" />
+            <marker date="1492706016000" expanded="true" signature="6705:6777" ph="select * fro... playlist_user" />
           </folding>
         </state>
       </provider>
@@ -860,18 +859,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/browse.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="63" column="25" lean-forward="false" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
-          <folding>
-            <marker date="1492704415000" expanded="true" signature="3190:3209" ph="SELECT * fro... media" />
-            <marker date="1492704415000" expanded="true" signature="4012:4031" ph="SELECT * fro... media" />
-            <marker date="1492704415000" expanded="true" signature="6674:6746" ph="select * fro... playlist_user" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/submit_comment.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -927,10 +914,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/profile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
+        <state relative-caret-position="-165">
           <caret line="104" column="0" lean-forward="true" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
           <folding>
             <marker date="1492705867000" expanded="true" signature="3709:3753" ph="SELECT * fro... media" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/browse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="62" column="47" lean-forward="true" selection-start-line="62" selection-start-column="47" selection-end-line="62" selection-end-column="47" />
+          <folding>
+            <marker date="1492706016000" expanded="true" signature="3221:3240" ph="SELECT * fro... media" />
+            <marker date="1492706016000" expanded="true" signature="4043:4062" ph="SELECT * fro... media" />
+            <marker date="1492706016000" expanded="true" signature="6705:6777" ph="select * fro... playlist_user" />
           </folding>
         </state>
       </provider>
