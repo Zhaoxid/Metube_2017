@@ -21,7 +21,8 @@ if(isset($_POST['submit'])) {
 	else {
 		$check = user_exist_check($_POST['username'], $_POST['passowrd1']);	
 		if($check == 1){
-			//echo "Rigister succeeds";
+            Print '<script>alert("Register succeeded.");</script>';
+            Print '<script>window.location.assign("browse.php");</script>';
 			$_SESSION['username']=$_POST['username'];
 			header('Location: browse.php');
 		}
@@ -29,6 +30,7 @@ if(isset($_POST['submit'])) {
 			$register_error = "Username already exists. Please user a different username.";
 		}
 	}
+
 }
 
 ?>
@@ -58,9 +60,9 @@ if(isset($_POST['submit'])) {
 
 
 <form action="register.php" method="post">
-	Username: <input type="text" name="username"> <br>
-	Create Password: <input  type="password" name="passowrd1"> <br>
-	Repeat password: <input type="password" name="passowrd2"> <br>
+	Username: <input type="text" name="username" required> <br>
+	Create Password: <input  type="password" name="passowrd1" required> <br>
+	Repeat password: <input type="password" name="passowrd2" required> <br>
 	<input name="submit" type="submit" value="Submit">
 </form>
 
@@ -68,6 +70,6 @@ if(isset($_POST['submit'])) {
   if(isset($register_error))
    {  echo "<div id='passwd_result'> register_error:".$register_error."</div>";}
 ?>
-
+    </div>
 </body>
 </html>
