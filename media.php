@@ -30,7 +30,8 @@
 <div class="w3-main">
   <div class="w3-row w3-padding-64">
     <div class="w3-twothird w3-container">
-        <table width="75%" cellpadding="0" cellspacing="0
+        <table width="75%" cellpadding="0" cellspacing="0">
+
 <?php
 if(isset($_GET['id'])) {
 	$query = "SELECT * FROM media WHERE mediaid='".$_GET['id']."'";
@@ -54,14 +55,11 @@ if(isset($_GET['id'])) {
 		<p><?php echo $description;?></p><?php
 	}
 	else //view movie
-	{	
-?>
+	{
+?>	
 
 	<!-- <p>Viewing Video:<?php echo $result_row[2].$result_row[1];?></p> -->
-	<h2><?php
-		if (substr($type,0,5)=="video") {
-			echo "Viewing Video: ";
-		}
+	<h2> <?php if (substr($type,0,5)=="video") { echo "Viewing Video: "; }
 		else { echo "Viewing File: "; } ?>
 	<?php echo $result_row[6];?></h2>
 
