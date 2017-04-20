@@ -2,6 +2,10 @@
 <?php
 session_start();
 include_once "function.php";
+if(empty($_SESSION['username'])){
+    Print '<script>alert("User not found");</script>';
+    Print '<script>window.location.assign("index.php");</script>';
+}
 $request = 0;
 ?>
 
@@ -34,10 +38,10 @@ $request = 0;
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
-<div class="w3-main" style="margin-left:250px">
+<div class="w3-main" style="margin-left:250px"></div>
 
-  <div class="w3-row w3-padding-64">
-    <div class="w3-twothird w3-container">
+  <div class="w3-row w3-padding-64"></div>
+    <div class="w3-twothird w3-container"></div>
       <h1 class="w3-text-teal">Playlists</h1>
         <form action = "search.php" method="GET" >
         <input type = 'text' size='90' name='search' >
