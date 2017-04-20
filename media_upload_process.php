@@ -26,14 +26,14 @@ if(!file_exists($dirfile))
 	  
 	  if(file_exists($upfile))
 	  {
-	  	$result="5"; //The file has been uploaded.
+	  	$result=5; //The file has been uploaded.
 	  }
 	  else{
 			if(is_uploaded_file($_FILES["file"]["tmp_name"]))
 			{
 				if(!move_uploaded_file($_FILES["file"]["tmp_name"],$upfile))
 				{
-					$result="6"; //Failed to move file from temporary directory
+					$result=6; //Failed to move file from temporary directory
 				}
 				else /*Successfully upload file*/
 				{
@@ -53,17 +53,40 @@ if(!file_exists($dirfile))
 						$query2=mysql_query($insert2)
 							or die("Insert into Tags error in media_upload_process.php " .mysql_error());
 					} 
-					$result="0";
+					$result=0;
 				}
 			}
 			else  
 			{
-					$result="7"; //upload file failed
+					$result=7; //upload file failed
 			}
 		}
 	}
 	
 	//You can process the error code of the $result here.
+	if(isset($result)) {
+		if($result==1) {
+			$error=""
+		}
+		else if($result==2) {
+			$error=""
+		}
+		else if($result==3) {
+			$error=""
+		}
+		else if($result==4) {
+			$error=""
+		}
+		else if($result==5) {
+			$error=""
+		}
+		else if($result==6) {
+			$error=""
+		}
+		else if($result==7) {
+			$error=""
+		}
+	}
 ?>
 
 <meta http-equiv="refresh" content="0;url=browse.php?result=<?php echo $result;?>">
