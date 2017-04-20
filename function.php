@@ -133,14 +133,6 @@ function upload_error($result)
 		return  "Upload file failed";
 	}
 }
-/*
-if (isset($_POST['action'])) {
-	switch ($_POST['action']) {
-		case 'Username':
-			Username();
-			break;
-	}
-} */
 
 function Username($order)
 {
