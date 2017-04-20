@@ -48,10 +48,10 @@ if(isset($_GET['id'])) {
 	<!-- <p>Viewing Video:<?php echo $result_row[2].$result_row[1];?></p> -->
 	<h2>Viewing Video:<?php echo $result_row[6];?></h2>
 
-        <object classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" width="720" height="576" codebase="http://www.apple.com/qtactivex/qtplugin.cab#version=6,0,2,0" align="middle" >
+        <object classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" width="640" height="320" codebase="http://www.apple.com/qtactivex/qtplugin.cab#version=6,0,2,0" align="middle" >
             <param name="src" value="<?php echo $result_row[4];?>" />
             <param name="autoplay" value="true" />
-            <embed src="<?php echo $result_row[4];?>" width="720" height="576" pluginspage=http://www.apple.com/quicktime/download/ align="middle" autoplay="true" bgcolor="black" >
+            <embed src="<?php echo $result_row[4];?>" width="640" height="320" pluginspage=http://www.apple.com/quicktime/download/ align="middle" autoplay="true" bgcolor="black" >
             </embed>
         </object>
 

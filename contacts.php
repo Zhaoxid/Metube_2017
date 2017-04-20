@@ -18,7 +18,11 @@ if(isset($_POST['submit'])) {
     }
 
     else {
-        $relationship = $_POST['relation'];
+        if(isset($_POST['relation'])) {
+            $relationship = $_POST['relation'];
+        }else {
+            $relationship = "none";
+        }
         $username = $_SESSION['username'];
         $user2 = $_POST['user2'];
         $query = "insert into contacts values ('$username', '$relationship', '$user2')";
