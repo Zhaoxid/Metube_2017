@@ -25,31 +25,7 @@
 </head>
 
 <body>
-<?php
-if(isset($_GET['id'])) {
-	$query = "SELECT * FROM media WHERE mediaid='".$_GET['id']."'";
-	$result = mysql_query( $query );
-	$result_row = mysql_fetch_row($result);
-	
-    //update view count
-	mysql_query("UPDATE media SET views = views + 1 WHERE mediaid='".$_GET['id']."'");
-	
-	$filename=$result_row[0];   
-	$filepath=$result_row[4]; 
-	$type=$result_row[2];
-	$description=$result_row[5];
-	$title=$result_row[6];
-	if(substr($type,0,5)=="image") //view image
-	{
-		?> <h2><?php echo "Viewing Picture:";
-		echo $title; ?></h2>
-		<img src="<?php echo $filepath; ?>" width = "640" height = "320" >
-		<h3>Description:</h3>
-		<p><?php echo $description;?></p><?php
-	}
-	else //view movie
-	{	
-?>
+
 <!-- Sidebar -->
 <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" style="z-index:3;width:250px;margin-top:43px;" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
@@ -68,6 +44,39 @@ if(isset($_GET['id'])) {
 
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+        <table width="75%" cellpadding="0" cellspacing="0">
+
+<?php
+if(isset($_GET['id'])) {
+	$query = "SELECT * FROM media WHERE mediaid='".$_GET['id']."'";
+	$result = mysql_query( $query );
+	$result_row = mysql_fetch_row($result);
+	
+    //update view count
+	mysql_query("UPDATE media SET views = views + 1 WHERE mediaid='".$_GET['id']."'");
+	
+	$filename=$result_row[0];   
+	$filepath=$result_row[4]; 
+	$type=$result_row[2];
+	$description=$result_row[5];
+	$title=$result_row[6];
+	if(substr($type,0,5)=="image") //view image
+	{
+		?> <h2><?php echo "Viewing Picture: ";
+		echo $title; ?></h2>
+		<img src="<?php echo $filepath; ?>" width = "640" height = "320" >
+		<h3>Description:</h3>
+		<p><?php echo $description;?></p><?php
+	}
+	else //view movie
+	{	
+?>
 
 	<!-- <p>Viewing Video:<?php echo $result_row[2].$result_row[1];?></p> -->
 	<h2>Viewing Video:<?php echo $result_row[6];?></h2>
@@ -93,7 +102,6 @@ else
 }
 ?>
 
-Comment:
 <?php if(!empty($_SESSION['username'])){ ?>
 
 <form action="submit_comment.php?id=<?php echo $_GET['id'];?>" method="POST">
@@ -116,9 +124,9 @@ if (!$result){
     <col width="400">
 
     <tr>
-        <th> Username </th>
-        <th> Date </th>
-        <th> Comment </th>
+        <th align="left"> Username </th>
+        <th align="left"> Date </th>
+        <th align="left"> Comment </th>
     </tr>
     <?php
     while ($result_row = mysql_fetch_row($result)) {
@@ -131,6 +139,6 @@ if (!$result){
         <?php
     } ?>
 </table>
-
+</table>
 </body>
 </html>
