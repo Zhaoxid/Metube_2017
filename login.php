@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -52,7 +52,7 @@ if(isset($_POST['submit'])) {
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-
+<body>
 <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
 <div class="w3-main" style="margin-left:250px">
 
@@ -83,3 +83,6 @@ if(isset($_POST['submit'])) {
   if(isset($login_error))
    {  echo "<div id='passwd_result'>".$login_error."</div>";}
 ?>
+    </div>
+</body>
+</html>
