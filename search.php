@@ -135,8 +135,8 @@ if(isset($_GET['search'])){
                  <td>
                      <?php
                         echo "<form method='post' action= 'add_media_to_playlist.php?mediaid=".$mediaid."'> ";
-                        $query1 = "select * from playlist_user where username = '".$_SESSION['username']."';";
-                        $result1 = mysql_query($query1) or die ("Could not access playlist table".mysql_error());
+                        $query2 = "select * from playlist_user where username = '".$_SESSION['username']."';";
+                        $result2 = mysql_query($query2) or die ("Could not access playlist table".mysql_error());
                         echo "<select name='playlistname'>";
                           while($row = mysql_fetch_array($result1) )
                            {
