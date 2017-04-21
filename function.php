@@ -1,6 +1,7 @@
 <?php
 include "mysqlClass.inc.php";
 
+//some codes are from metube template
 function user_exist_check ($username, $password){
 	$query = "select * from account where username='$username'";
 	$result = mysql_query( $query );
