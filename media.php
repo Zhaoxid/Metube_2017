@@ -26,7 +26,7 @@
 
 <body>
 
-<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible edited from: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_webpage&stacked=h -->
 <div class="w3-main">
   <div class="w3-row w3-padding-64">
     <div class="w3-twothird w3-container">

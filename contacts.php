@@ -51,7 +51,7 @@ if(isset($_POST['submit'])) {
     </style>
 </head>
 <body>
-<!-- Sidebar -->
+<!-- Sidebar edited from: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_webpage&stacked=h -->
 <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" style="z-index:3;width:250px;margin-top:43px;" id="mySidebar">
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
         <i class="fa fa-remove"></i>
@@ -67,11 +67,11 @@ if(isset($_POST['submit'])) {
 
 </nav>
 
-<!-- Overlay effect when opening sidebar on small screens -->
+<!-- Overlay effect when opening sidebar on small screens edited from: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_webpage&stacked=h -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 
-<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible edited from: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_webpage&stacked=h -->
 <div class="w3-main" style="margin-left:250px">
 
     <div class="w3-row w3-padding-64">
@@ -96,7 +96,6 @@ if (!$result){
     die ("Could not query the media table in the database: <br />". mysql_error());
 }
 ?>
-<!-- <div style="background:#339900;color:#FFFFFF; margin-left:250px; width:200px;">Contacts List</div> --> 
     <col width="30">
     <col width="100">
     <col width="100">

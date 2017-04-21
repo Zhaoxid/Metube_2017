@@ -31,22 +31,7 @@ function saveDownload(id)
 
 <body>
 
-<!--
-<p>Welcome <?php echo $_SESSION['username'];?></p>
-
-<a href='update_profile.php'  style="color:#FF9900;">Update Profile</a> <br>
-<a href='media_upload.php'  style="color:#FF9900;">Upload File</a> <br>
-<a href='message.php'  style="color:#FF9900;">Message&Inbox</a> <br>
-<a href='contacts.php'  style="color:#FF9900;">Contacts</a><br>
-<a href='index.php'  style="color:#FF9900;">Logout</a> <br>
-
-<form action = "search.php" method="GET" >
-	<input type = 'text' size='90' name='search' >
-	<input type = 'submit' name='submit' value='Search files'>
-</form>
--->
-
-<!-- Sidebar -->
+<!-- Sidebar edited from: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_webpage&stacked=h -->
 <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" style="z-index:3;width:250px;margin-top:43px;" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
     <i class="fa fa-remove"></i>
@@ -66,7 +51,7 @@ function saveDownload(id)
     <?php }?>
 </nav>
 	
-<!-- Overlay effect when opening sidebar on small screens -->
+<!-- Overlay effect when opening sidebar on small screens edited from: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_webpage&stacked=h -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 
@@ -131,7 +116,7 @@ else {
 }
 ?>  
 
-<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible edited from: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_webpage&stacked=h-->
 <div class="w3-main" style="margin-left:250px">
 
   <div class="w3-row w3-padding-64">
