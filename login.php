@@ -16,6 +16,7 @@ if(!empty($_SESSION['username'])){
     Print '<script>window.location.assign("browse.php");</script>';
 }
 
+//code part from metube template
 if(isset($_POST['submit'])) {
 		if($_POST['username'] == "" || $_POST['password'] == "") {
 			$login_error = "One or more fields are missing.";

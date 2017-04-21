@@ -10,7 +10,7 @@ include_once "function.php";
 
 $username=$_SESSION['username'];
 
-
+//code part from metube template
 //Create Directory if doesn't exist
 if(!file_exists('uploads/'))
 	mkdir('uploads/', 0757);

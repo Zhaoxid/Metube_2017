@@ -13,7 +13,7 @@
 session_start();
 include_once "function.php";
 
-
+//code part from metube template
 if(isset($_POST['submit'])) {
 	if( $_POST['passowrd1'] != $_POST['passowrd2']) {
 		$register_error = "Passwords don't match. Try again?";

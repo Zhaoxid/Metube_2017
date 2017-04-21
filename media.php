@@ -32,7 +32,9 @@
     <div class="w3-twothird w3-container">
         <table width="75%" cellpadding="0" cellspacing="0">
 
+
 <?php
+//code part from metube template
 if(isset($_GET['id'])) {
 	$query = "SELECT * FROM media WHERE mediaid='".$_GET['id']."'";
 	$result = mysql_query( $query );
