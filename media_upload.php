@@ -57,9 +57,9 @@ if(empty($_SESSION['username'])) {
    <h4> Title: </h4>
    <p><input name="title" type="text" required/> <br> </p>
    <h4> Description: </h4>
-   <p> <textarea name="description" cols="50" rows="5" ></textarea> <br> </p>
+   <p> <textarea name="description" cols="50" rows="5" required></textarea> <br> </p>
    <h4>Add Tags (separate by commas):</h4>
-   <p><input name="tags" type="text" /> <br> </p>
+   <p><input name="tags" type="text" required/> <br> </p>
    
    <p><input value="Upload" name="submit" type="submit" /> </p>
  

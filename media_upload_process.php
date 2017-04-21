@@ -49,11 +49,9 @@ if(!file_exists($dirfile))
 					$tags=explode(",",$_POST['tags']);
 					$num=count($tags);
 					for($i=0;$i<$num;$i++) {
-						if($tags[$i]!="" || $tags[$i]!=" ") {
-							$insert2="insert into tags(mediaid,tag,tagid)"."values('$last_id','$tags[$i]',NULL)";
-							$query2=mysql_query($insert2)
-								or die("Insert into Tags error in media_upload_process.php " .mysql_error());
-						}
+						$insert2="insert into tags(mediaid,tag,tagid)"."values('$last_id','$tags[$i]',NULL)";
+						$query2=mysql_query($insert2)
+							or die("Insert into Tags error in media_upload_process.php " .mysql_error());
 					} 
 					$result=0;
 				}

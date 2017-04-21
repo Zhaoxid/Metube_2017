@@ -56,6 +56,7 @@
 
 <?php
 if(isset($_GET['search'])){
+	$entry=$_GET['search'];
 	$query1= "SELECT * FROM media WHERE title='".$_GET['search']."' OR username='".$_GET['search']."' OR mediaid IN (SELECT mediaid FROM tags WHERE tag='".$_GET['search']."')";
 	$status  = "nothing";
 
@@ -71,7 +72,7 @@ if(isset($_GET['search'])){
     }
 
 	?>
-	<div style="background:#339900;color:#FFFFFF; width:250px;">Matched Files for <?php echo $_GET['search'];?></div>
+	<div style="background:#339900;color:#FFFFFF; width:250px;">Matched Files for <?php echo $entry;?></div>
 	<table width="75%" cellpadding="0" cellspacing="0">
         <tr>
                 <form>
