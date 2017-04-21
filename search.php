@@ -72,7 +72,7 @@ if(isset($_GET['search'])){
 
 	?>
 	<div style="background:#339900;color:#FFFFFF; width:200px;">Matched Files for <?php $_GET['search']?></div>
-	<table width="75%" cellpadding="0" cellspacing="0">
+	<table width="100%" cellpadding="0" cellspacing="0">
         <tr>
                 <form>
                 <th align="left"> Username </th>
