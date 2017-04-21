@@ -71,7 +71,7 @@ if(isset($_GET['search'])){
     }
 
 	?>
-	<div style="background:#339900;color:#FFFFFF; width:200px;">Matched Files</div>
+	<div style="background:#339900;color:#FFFFFF; width:200px;">Matched Files for $_GET['search']</div>
 	<table width="75%" cellpadding="0" cellspacing="0">
         <tr>
                 <form>
@@ -138,7 +138,7 @@ if(isset($_GET['search'])){
                         $query2 = "select * from playlist_user where username = '".$_SESSION['username']."';";
                         $result2 = mysql_query($query2) or die ("Could not access playlist table".mysql_error());
                         echo "<select name='playlistname'>";
-                          while($row = mysql_fetch_array($result1) )
+                          while($row = mysql_fetch_array($result2) )
                            {
                             echo "<option value='".$row[0]."'>".$row[0]."</option>";
                            }
