@@ -141,7 +141,7 @@ else {
         <input type = 'text' size='90' name='search' required >
         <input type = 'submit' name='submit' value='Search files' >
 	</form>
-	<table width="75%" cellpadding="0" cellspacing="0">
+	<table width="100%" cellpadding="0" cellspacing="0">
 	<tr>
 		<form>
 		<th align="left">
