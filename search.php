@@ -105,7 +105,7 @@ if(isset($_GET['search'])){
 
 		<?php
 			while ($result_row = mysql_fetch_row($result1)) //filename, username, type, mediaid, path
-			{ 
+			{
 				$mediaid = $result_row[3];
 				$filename = $result_row[0];
 				$filenpath = $result_row[4];
@@ -119,7 +119,7 @@ if(isset($_GET['search'])){
                                                 echo $username;  //mediaid
                                         ?>
                         </td>
-			
+
                  <td>
                      <a href="media.php?id=<?php echo $mediaid;?>" target="_blank"><?php echo $title;?></a>
                  </td>
@@ -138,9 +138,9 @@ if(isset($_GET['search'])){
                         $query2 = "select * from playlist_user where username = '".$_SESSION['username']."';";
                         $result2 = mysql_query($query2) or die ("Could not access playlist table".mysql_error());
                         echo "<select name='playlistname'>";
-                          while($row = mysql_fetch_array($result2) )
+                          while($row2 = mysql_fetch_array($result2) )
                            {
-                            echo "<option value='".$row[0]."'>".$row[0]."</option>";
+                            echo "<option value='".$row2[0]."'>".$row2[0]."</option>";
                            }
                         echo  "</select>";
                         echo "</td>";
@@ -148,7 +148,7 @@ if(isset($_GET['search'])){
                         echo "<input value='Add to playlist' name='add_to_playlist' type='submit'>";
                         echo "</form>";
                      ?>
-		</td>
+		        </td>
             <?php }?>
 		    </tr>
         	<?php
