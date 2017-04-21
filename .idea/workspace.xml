@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b6f287eb-8c99-4c89-a9be-bfd558e4e984" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search.php" afterPath="$PROJECT_DIR$/search.php" />
-    </list>
+    <list default="true" id="b6f287eb-8c99-4c89-a9be-bfd558e4e984" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,12 +66,13 @@
       <file leaf-file-name="search.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="73" column="102" lean-forward="true" selection-start-line="73" selection-start-column="102" selection-end-line="73" selection-end-column="102" />
+            <state relative-caret-position="-47">
+              <caret line="63" column="64" lean-forward="true" selection-start-line="63" selection-start-column="64" selection-end-line="63" selection-end-column="64" />
               <folding>
-                <marker date="1492737760000" expanded="true" signature="2719:2879" ph="SELECT * FRO... media" />
-                <marker date="1492737760000" expanded="true" signature="6059:6131" ph="select * fro... playlist_user" />
-                <marker date="1492737760000" expanded="true" signature="6639:6822" ph="..." />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1492737975000" expanded="true" signature="2719:2879" ph="SELECT * FRO... media" />
+                <marker date="1492737975000" expanded="true" signature="6103:6175" ph="select * fro... playlist_user" />
+                <marker date="1492737975000" expanded="true" signature="6683:6866" ph="..." />
               </folding>
             </state>
           </provider>
@@ -324,12 +323,12 @@
       <workItem from="1492637787082" duration="5472000" />
       <workItem from="1492695861561" duration="8132000" />
       <workItem from="1492705643515" duration="7770000" />
-      <workItem from="1492737553935" duration="210000" />
+      <workItem from="1492737553935" duration="435000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77924000" />
+    <option name="totallyTimeSpent" value="78149000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="541" y="43" width="1139" height="947" extended-state="0" />
@@ -894,12 +893,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="73" column="102" lean-forward="true" selection-start-line="73" selection-start-column="102" selection-end-line="73" selection-end-column="102" />
+        <state relative-caret-position="-47">
+          <caret line="63" column="64" lean-forward="true" selection-start-line="63" selection-start-column="64" selection-end-line="63" selection-end-column="64" />
           <folding>
-            <marker date="1492737760000" expanded="true" signature="2719:2879" ph="SELECT * FRO... media" />
-            <marker date="1492737760000" expanded="true" signature="6059:6131" ph="select * fro... playlist_user" />
-            <marker date="1492737760000" expanded="true" signature="6639:6822" ph="..." />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1492737975000" expanded="true" signature="2719:2879" ph="SELECT * FRO... media" />
+            <marker date="1492737975000" expanded="true" signature="6103:6175" ph="select * fro... playlist_user" />
+            <marker date="1492737975000" expanded="true" signature="6683:6866" ph="..." />
           </folding>
         </state>
       </provider>
